@@ -10,7 +10,7 @@ const Navbar = () => {
       <Link className={cl.navbar__link} to="/partners"><p className={cl.link__text}>Партнеры</p></Link>
       <Link className={cl.navbar__link} to="/contacts"><p className={cl.link__text}>Контакты</p></Link>
     </div >
-  )
-}
+  );
+};
 
 export default Navbar;
