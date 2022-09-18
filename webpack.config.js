@@ -9,6 +9,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[contenthash].js',
+    publicPath: '/',
     assetModuleFilename: (pathData) => {
       const filepath = path.dirname(pathData.filename).split('/').slice(1).join('/');
       return `${filepath}/[name][hash][ext]`;
@@ -26,6 +27,7 @@ module.exports = {
     open: true,
     hot: false,
     liveReload: true,
+    historyApiFallback: true,
   },
   module: {
     rules: [
