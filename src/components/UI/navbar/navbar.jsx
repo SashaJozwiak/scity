@@ -1,14 +1,11 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-//import { useNavigate } from "react-router";
+import { NavLink, useNavigate } from "react-router-dom";
 import logo from "../../../assets/logo/logo2_svg.svg"
 import logo2 from "../../../assets/logo/logo_3.svg"
 import cl from "./navbar.module.scss";
 
-
-//const navigator = useNavigate();
-
 const Navbar = () => {
+  const navigator = useNavigate();
   const isActivePredicate = (isActive) => {
     return isActive
       ? `${cl.navbar__link} ${cl.navbar__link_active}`
@@ -20,7 +17,7 @@ const Navbar = () => {
         className="logo"
         src={logo}
         alt={"logo"}
-        onClick={() => navigator("..")}
+        onClick={() => navigator("/")}
       />
       <NavLink className={({ isActive }) => isActivePredicate(isActive)} to="/projects"><p className={cl.link__text}>Проекты</p></NavLink>
       <NavLink className={({ isActive }) => isActivePredicate(isActive)} to="/corporation"><p className={cl.link__text}>Корпорация</p></NavLink>
@@ -30,7 +27,7 @@ const Navbar = () => {
         className="logo"
         src={logo2}
         alt={"logo"}
-        onClick={() => navigator("..")}
+        onClick={() => navigator("/")}
       />
     </div>
   );
