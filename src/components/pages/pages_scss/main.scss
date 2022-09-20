@@ -1,0 +1,52 @@
+/* .main {
+    display: block;
+    text-align: center;
+    padding: 120px 10px;
+    text-align: center;
+    padding: 120px 10px;
+    background: transparent top center;  
+    
+}
+
+.main__background-text {
+    padding: 10px 20px;
+    background: #bfe2ff00;
+    display: inline-block;
+}
+
+.main__background-text span {
+    
+    font-family: Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    text-transform: uppercase;
+    background: transparent top -130px center;
+    background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0 0 8px rgba(0,0,0,5), 0 2px 4px rgba(0, 0, 0, 0.233);
+
+} */
+
+
+.background {
+    text-align: center;
+    background: rgba(206, 210, 221, 0) top center;  
+    padding: 20px 10px;
+}    
+
+
+.transparent {
+    font-family: Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    background: rgba(0, 0, 0, 0);
+    color: rgb(247, 244, 244);
+    mix-blend-mode: multiply;
+    padding: 10px 20px;
+    display: inline-block;
+    text-shadow: 0 0 8px rgba(0,0,0,5), 0 2px 4px rgba(0,0,0,0.7);
+}
