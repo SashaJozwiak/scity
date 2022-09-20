@@ -18,7 +18,7 @@
     color:black ;
     cursor: pointer;
 
-    background-color: rgba(90,115,137, 0.788);
+    background-color: rgba(255, 255, 255, 0.685);
     color: black;
     font-size: 1.5rem;
     display: block;
@@ -46,7 +46,7 @@
 
     &:hover {
       //transform: skewX(-30deg) scale(1.1);
-      background: #294284; 
+      background: rgba(90, 115, 137, 0.938); 
       color: white;
     }
   }
