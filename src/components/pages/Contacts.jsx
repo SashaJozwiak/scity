@@ -7,7 +7,7 @@ const Contacts = () => {
   return (
     <div>
       Contacts
-      <YMaps>
+      {/* <YMaps>
     <Map state={mapState}>
  
       <Placemark
@@ -27,7 +27,7 @@ const Contacts = () => {
       />
  
     </Map>
-  </YMaps>
+  </YMaps> */}
     </div>
   );
 };

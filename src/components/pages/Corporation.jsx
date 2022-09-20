@@ -5,15 +5,19 @@ const Corporation = () => {
   return (
     <div className="corporation">
       <div className="corp about">
-      Проектирование
+      <p className="link__text">Проектирование</p>
       </div>
+
+      {/* <div className="arrow"></div> */}
 
       <div className="corp history">
-        Производство
+      <p className="link__text">Производство</p>
       </div>
 
+      {/* <div className="arrow"></div> */}
+
       <div className="corp achievements">
-        Монтаж
+        <p className="link__text">Монтаж</p>
       </div>
 
 
