@@ -11,8 +11,8 @@ const Main = () => {
         </div>
       
     </div> */
-    <div class="background">
-    <div class="transparent">Несущие системы стройсити</div>
+    <div className="background">
+    <div className="transparent">Несущие системы стройсити</div>
 </div>
   );
 };
