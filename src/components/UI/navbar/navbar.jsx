@@ -6,7 +6,7 @@ import cl from "./navbar.module.scss";
 
 const Navbar = () => {
   const navigator = useNavigate();
-  const isActivePredicate = (isActive) => {
+  const isActiveCheck = (isActive) => {
     return isActive
       ? `${cl.navbar__link} ${cl.navbar__link_active}`
       : cl.navbar__link
@@ -20,10 +20,10 @@ const Navbar = () => {
         alt={"logo"}
         onClick={() => navigator("/")}
       />
-      <NavLink className={({ isActive }) => isActivePredicate(isActive)} to="/corporation"><p className={cl.link__text}>Корпорация</p></NavLink>
-      <NavLink className={({ isActive }) => isActivePredicate(isActive)} to="/projects"><p className={cl.link__text}>Проекты</p></NavLink>
-      <NavLink className={({ isActive }) => isActivePredicate(isActive)} to="/partners"><p className={cl.link__text}>Партнеры</p></NavLink>
-      <NavLink className={({ isActive }) => isActivePredicate(isActive)} to="/contacts"><p className={cl.link__text}>Контакты</p></NavLink>
+      <NavLink className={({ isActive }) => isActiveCheck(isActive)} to="/corporation"><p className={cl.link__text}>Корпорация</p></NavLink>
+      <NavLink className={({ isActive }) => isActiveCheck(isActive)} to="/projects"><p className={cl.link__text}>Проекты</p></NavLink>
+      <NavLink className={({ isActive }) => isActiveCheck(isActive)} to="/partners"><p className={cl.link__text}>Партнеры</p></NavLink>
+      <NavLink className={({ isActive }) => isActiveCheck(isActive)} to="/contacts"><p className={cl.link__text}>Контакты</p></NavLink>
       <img
         className={cl.logo}
         src={logo2}
