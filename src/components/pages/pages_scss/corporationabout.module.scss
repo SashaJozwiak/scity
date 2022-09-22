@@ -1,0 +1,111 @@
+::-webkit-scrollbar {
+    width: 0;
+  }
+
+.corporationabout {
+    display: flex;
+    flex-direction: column;
+    //width: 70rem;
+    //height: 30rem;
+    background-color: rgba(228, 226, 226, 0.884);
+    border-radius: 10px;
+    padding: 10px 25px 150px 25px;
+    z-index: -1;
+    margin-top: 50px;
+    width: 1000px;
+
+
+}
+
+.project_one {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px 0 10px;
+
+}
+
+.transparent {
+    font-family: Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    background: rgba(0, 0, 0, 0);
+    color: rgb(247, 244, 244);
+    mix-blend-mode: multiply;
+    padding: 10px 20px;
+    display: inline-block;
+    text-shadow: 0 0 8px rgba(0,0,0,5), 0 2px 4px rgba(0,0,0,0.7);
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(90, 115, 137);
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+ul {
+    font-size: 18px;
+    padding: 5px;
+}
+
+.imgone {
+    //display: block;
+    border-radius: 10px;
+    padding: 20px 0;
+    opacity: .7;
+}
+
+.imgtwo {
+        //display: block;
+        //padding: 20px 0;
+        border-radius: 10px;
+        opacity: .7;
+        width: 420px;
+}
+
+.imgfour {
+    opacity: .7;
+    border-radius: 10px;
+    width: 490px;
+    margin-top: -150px;
+
+}
+
+.imgthree {
+    width: 420px;
+    margin-top: -160px;
+    margin-left: 505px;
+    opacity: .7;
+    border-radius: 10px;
+}
+
+
+
+.listimg {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.listimgtwo {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    opacity: .7;
+}
+
+.imgpartthree{
+    width: 460px;
+    height: 320px;
+    border-radius: 10px;
+}
+

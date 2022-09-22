@@ -1,18 +1,26 @@
 .corporation {
   display: flex;
+
   flex-direction: column;
   justify-content: center;
   gap: 10px;
 
+  
+
   align-items: center;
   vertical-align: center;
-  margin: 0 auto;
+  margin: 0px auto;
+  padding-top: 10px;
 
-  width: 80%;
-  height: 10vh;
-  //background: rgba(252, 250, 250, 0.7);
+  //height: 10vh;
+  
   &__navbar {
     display: flex;
+    position: fixed;
+    top: 5px;
+    //margin: 10px;
+    //height: 10vh;
+
   }
   .corp {
     font-size: 1.5rem;
@@ -27,7 +35,7 @@
     height: 45px;
     line-height: 45px;
     text-align: center;
-    margin: 10px;
+    margin: 0 10px 0 10px;
     transform: skewX(-30deg);
     transition: 0.3s;
     //border-bottom: #294284 dotted 2px;
@@ -36,7 +44,7 @@
     box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.6);
 
     &_active {
-      background: #294284;
+      background: rgba(90, 115, 137, 0.938);
       color: white;
       box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.6);
     }
@@ -53,12 +61,13 @@
   }
 }
 
-// /134, 134, 155
-
-.arrow {
-  border: 20px solid transparent;
-  //border-right: 50px solid #86869b;
-  border-left: 50px solid rgba(90, 115, 137, 0.8);
-
-  //border-radius: 5px;
+.title {
+  display: block;
+  text-align: center;
+  background: rgba(206, 210, 221, 0.781) top center;  
+  padding: 10px 10px;
+  margin: 200px auto;
+  width: 50%;
+  height: 90px;
+  border-radius: 10px;
 }
