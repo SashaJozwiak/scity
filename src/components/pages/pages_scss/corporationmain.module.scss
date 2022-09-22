@@ -1,0 +1,33 @@
+
+.corporationabout {
+    display: flex;
+    flex-direction: column;
+    //width: 70rem;
+    //height: 30rem;
+    background-color: rgba(228, 226, 226, 0.884);
+    border-radius: 10px;
+    padding: 10px 25px 50px 25px;
+    z-index: -1;
+    margin-top: 50px;
+    width: 1000px;
+
+
+}
+
+.logo {
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(90, 115, 137);
+    padding: 10px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+

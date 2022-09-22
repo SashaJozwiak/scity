@@ -20,7 +20,7 @@ const Navbar = () => {
         alt={"logo"}
         onClick={() => navigator("/")}
       />
-      <NavLink className={({ isActive }) => isActiveCheck(isActive)} to="/corporation"><p className={cl.link__text}>Корпорация</p></NavLink>
+      <NavLink className={({ isActive }) => isActiveCheck(isActive)} to="/corporation"><p className={cl.link__text}>Деятельность</p></NavLink>
       <NavLink className={({ isActive }) => isActiveCheck(isActive)} to="/projects"><p className={cl.link__text}>Проекты</p></NavLink>
       <NavLink className={({ isActive }) => isActiveCheck(isActive)} to="/partners"><p className={cl.link__text}>Партнеры</p></NavLink>
       <NavLink className={({ isActive }) => isActiveCheck(isActive)} to="/contacts"><p className={cl.link__text}>Контакты</p></NavLink>
