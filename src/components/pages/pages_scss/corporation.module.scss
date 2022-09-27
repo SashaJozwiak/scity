@@ -11,6 +11,7 @@
   vertical-align: center;
   margin: 0px auto;
   padding-top: 10px;
+  
 
   //height: 10vh;
   
@@ -41,12 +42,19 @@
     //border-bottom: #294284 dotted 2px;
     //border-top: #294284 dotted 2px;
     border-radius: 10px;
-    box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.6);
+    box-shadow: 7px 7px 5px rgba(0,0,0,0.6); 
+    transition-duration: 0.5s;
 
     &_active {
       background: rgba(90, 115, 137, 0.938);
       color: white;
       box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.6);
+      transition-duration: 0.5s;
+    }
+
+    &_active .icons {
+      fill: white;
+      transition-duration: 0.5s;
     }
 
     .link__text {
@@ -58,8 +66,27 @@
       background: rgba(90, 115, 137, 0.938);
       color: white;
     }
+
+    &:hover .icons {
+      fill: white;
+      transition-duration: 0.5s;
+    }
+
+
   }
 }
+
+.icons {
+  display: inline;
+  margin: 10px 10px -2px 0;
+  width: 19px;
+  height: 19px;
+  transition-duration: 0.5s;
+}
+
+/* .icons:hover {
+  fill: white;
+} */
 
 .title {
   display: block;

@@ -4,7 +4,7 @@ import "./pages_scss/main.scss"
 const Main = () => {
   return (
     <div className="background">
-        <div className="transparent">Несущие системы стройсити</div>
+        <div className="transparent">стройсити  <br /> несущие системы</div>
     </div>
   );
 };
