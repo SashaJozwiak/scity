@@ -57,7 +57,8 @@
     display: inline-block;
     text-shadow: 0 0 8px rgba(0,0,0,5), 0 2px 4px rgba(0,0,0,0.7);
     //background: rgba(184, 185, 185, 0.925) top center;
-    background: rgba(90, 115, 137, 0.719) top center;
+    background: rgba(90, 115, 137, 0.493) top center;
     border-radius: 10px;
     margin-top: -10px;
+    user-select: none;
 }
