@@ -1,8 +1,10 @@
 import React from "react";
-import cl from "../pages/pages_scss/projects.module.scss"
+import cl from "../pages/pages_scss/projects.module.scss";
 import { YMaps, Map, Placemark } from "react-yandex-maps";
+import { renderToString } from 'react-dom/server'
 
 const Projects = () => {
+  const content = renderToString(<div style={{ width: '400px', height: '400px', background: 'white' }}></div>);
   return (
     <div className={cl.mapwrapper}>
       <YMaps>
@@ -19,7 +21,7 @@ const Projects = () => {
             }}
             properties={{
               hintContent: 'Это хинт',
-              balloonContent: 'Это балун'
+              balloonContent: content
             }}
             modules={
               ['geoObject.addon.balloon', 'geoObject.addon.hint']
