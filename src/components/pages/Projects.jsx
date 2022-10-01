@@ -4,7 +4,7 @@ import { YMaps, Map, Placemark } from "react-yandex-maps";
 import { renderToString } from 'react-dom/server'
 
 const Projects = () => {
-  const content = renderToString(<div style={{ width: '400px', height: '400px', background: 'white' }}></div>);
+  const content = renderToString(<div className="balloon-content"></div>);
   return (
     <div className={cl.mapwrapper}>
       <YMaps>
