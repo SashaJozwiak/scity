@@ -14,8 +14,6 @@
   
 } */
 
-
-
 .icons {
   display: inline;
   margin: 10px 10px -2px 0;
@@ -28,8 +26,8 @@
   fill: white;
 } */
 
-
 .navbar {
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -40,17 +38,17 @@
   width: 100%;
   padding: 5px;
 
-  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0.8)),  
-  linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8)),
+    linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   -webkit-mask-size: 100% 91%, 100% 10%;
   -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position:bottom, top;
+  -webkit-mask-position: bottom, top;
 
-  mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0.8)),  
-  linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8)),
+    linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   mask-size: 100% 91%, 100% 10%;
   mask-repeat: no-repeat;
-  mask-position:bottom, top;
+  mask-position: bottom, top;
 
   .navbar__link {
     // #b0b0d3;
@@ -68,13 +66,13 @@
     //border-bottom: #294284 dotted 2px;
     //border-top: #294284 dotted 2px;
     border-radius: 10px;
-    box-shadow: 7px 7px 5px rgba(0,0,0,0.6); 
+    box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.6);
     transition-duration: 0.5s;
-    
+
     &_active {
-      background: #294284; 
+      background: #294284;
       color: white;
-      box-shadow: 3px 3px 2px rgba(0,0,0,0.6);
+      box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.6);
       transition-duration: 0.5s;
     }
 
@@ -88,7 +86,7 @@
 
     &:hover {
       //transform: skewX(-30deg) scale(1.1);
-      background: #294284; 
+      background: #294284;
       color: white;
       transition: 0.5s;
     }
