@@ -3,11 +3,11 @@ import cl from './Map.module.scss';
 import map from '../../assets/pics/component-map.png';
 import MapButton from '../UI/MapButton/MapButton.jsx';
 
-const Map = () => {
+const Map = ({ children }) => {
   return (
     <div className={cl.MapContainer}>
       <img className={cl.MapImage} src={map} />
-      <MapButton city='Москва' />
+      {children}
     </div>
   );
 };
