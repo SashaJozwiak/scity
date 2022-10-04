@@ -10,6 +10,7 @@ const ModalWindow = ({ isActive, setActive, content }) => {
         cl.ModalWindowBackground}
     >
       <div
+        onClick={(e) => e.stopPropagation()}
         className={isActive ?
           `${cl.ModalWindowContent} ${cl.ModalWindowContent__active}` :
           cl.ModalWindowContent}
