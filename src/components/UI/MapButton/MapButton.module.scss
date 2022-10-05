@@ -1,0 +1,18 @@
+.MapButton {
+  width: 20px;
+  height: 20px;
+  background: inherit;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: absolute;
+  transition: 0.3s;
+  &:hover {
+    transform: scale(3);
+  }
+}
+.MapButtonCityName {
+  position: absolute;
+  left: 20px;
+  top: -4px;
+  font-size: 1.5rem;
+}
