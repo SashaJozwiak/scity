@@ -13,17 +13,26 @@
   pointer-events: none;
   transition: 0.3s;
   &__active {
-    opacity: 0.7;
+    opacity: 0.75;
     pointer-events: all;
   }
+
+
+
 }
 .ModalWindowContent {
-  width: 500px;
-  height: 700px;
-  background-color: white;
+  width: 40%;
+  height: 90%;
+  background-color: rgb(255, 255, 255);
   transform: scale(0);
   transition: 0.3s;
+  border-radius: 10px;
+  
+
   &__active {
     transform: scale(1);
+
   }
+
 }
+
