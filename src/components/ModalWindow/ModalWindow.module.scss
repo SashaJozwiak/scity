@@ -1,8 +1,7 @@
 .ModalWindowBackground {
   width: 100vw;
   height: 100vh;
-  background-color: black;
-  opacity: 0;
+  background-color: rgba(0, 0, 0, 0);
   position: fixed;
   top: 0;
   left: 0;
@@ -13,7 +12,7 @@
   pointer-events: none;
   transition: 0.3s;
   &__active {
-    opacity: 0.75;
+    background-color: rgba(0, 0, 0, 0.75);
     pointer-events: all;
   }
 }
@@ -25,8 +24,11 @@
   transition: 0.3s;
   border-radius: 10px;
   overflow: auto;
-
+  opacity: 0.75;
   &__active {
     transform: scale(1);
+  }
+  &:hover {
+    opacity: 1;
   }
 }
