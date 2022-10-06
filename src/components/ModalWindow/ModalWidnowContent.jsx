@@ -1,14 +1,20 @@
 import React from "react";
-import cl from './ModalWindowContent.scss';
-import image from '../../assets/pics/component-map.png';
+import imageMoscowOne from '../../assets/project-photo/moscow/project1.jpg';
 
-const ModalWindowContent = ({ city, text }) => {
+import cl from './ModalWindowContent.scss';
+import './ModalWindowContent.scss';
+
+const ModalWindowContent = ({ city, text, img }) => {
   return (
     <div>
       <h1 className='content-title'>{city}</h1>
-      <p className='content-text'>{text}</p>
-      <img src={image} alt="just image" width={'100px'} height={'100px'} />
+      <div className="project">
+          <p className='content-text'>{text}</p>
+          <img src={img} className='project-photo' alt="just image" width={'100%'} height={'100%'} />
+      </div>
     </div>
+
+    
   );
 };
 
