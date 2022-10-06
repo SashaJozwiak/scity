@@ -2,43 +2,45 @@
   width: 20px;
   height: 20px;
   background: inherit;
-  background-color: rgba(255, 255, 255, 0.808);
-  border: 1px solid rgba(252, 249, 249, 0);
+  background-color: rgb(41, 65, 132);
+  border: 6px solid rgba(255, 252, 252, 0.938);
   border-radius: 50%;
   position: absolute;
   transition: 0.5s;
-  box-shadow: 7px 7px 5px rgb(0 0 0 / 60%);
+  box-shadow: 7px 7px 5px rgb(0 0 0 / 30%);
   
   &:hover {
     transform: scale(1);
     box-shadow: 7px 7px 5px rgb(0 0 0 / 60%);
     transition: 0.5s;
 
-    background-color: rgb(255, 255, 255);
   }
 
   &:hover .MapButtonCityName {
     transition: 0.5s;
-    background-color: rgb(240, 255, 255);
     box-shadow: 7px 7px 5px rgb(0 0 0 / 60%);
   }
 
 }
 
 .MapButtonCityName {
+  display: inline-block;
   position: absolute;
   left: 20px;
-  top: -4px;
+  top: -5px;
+  //width: 140px;
+  
   font-size: 1.2rem;
-  background-color: rgba(240, 255, 255, 0.808);
+  background-color: rgba(255, 255, 255, 0.815);
   border-radius: 10px;
+  border: 2px solid rgb(41, 65, 132);;
   padding: 4px;
-  box-shadow: 5px 5px 3px rgb(0 0 0 / 40%);
+  box-shadow: 5px 5px 3px rgb(0 0 0 / 30%);
   transition: 0.5s;
 
   &:hover {
     transition: 0.5s;
-    background-color: rgb(240, 255, 255);
+    background-color: rgb(255, 255, 255);
     box-shadow: 7px 7px 5px rgb(0 0 0 / 60%);
   }
 

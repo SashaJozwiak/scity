@@ -9,7 +9,7 @@ const MapMarkers = [
     content: <ModalWindowContent city={'Москва'} text={'Замечательынй город'} />
   },
   {
-    city: 'Санкт-Петербург',
+    city: 'CПб',
     top: '31.4%',
     left: '12.7%',
     content: <ModalWindowContent city={'Санкт-Петербург'} text={'Еще один замечательный город'} />
