@@ -16,9 +16,6 @@
     opacity: 0.75;
     pointer-events: all;
   }
-
-
-
 }
 .ModalWindowContent {
   width: 40%;
@@ -27,12 +24,9 @@
   transform: scale(0);
   transition: 0.3s;
   border-radius: 10px;
-  
+  overflow: auto;
 
   &__active {
     transform: scale(1);
-
   }
-
 }
-
