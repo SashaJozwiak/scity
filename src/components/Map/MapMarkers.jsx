@@ -47,7 +47,7 @@ const MapMarkers = [
     </ModalWindowContent>
   },
   {
-    city: 'CПб',
+    city: 'Санкт-Петербург',
     top: '31.4%',
     left: '12.7%',
     content: <ModalWindowContent city={'Санкт-Петербург'} >

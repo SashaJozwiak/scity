@@ -2,9 +2,27 @@
   position: relative;
   width: 75%;
   margin: 0 auto;
-  top: -50px;
+  top: -60px;
+  vertical-align: auto;
 
+  opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+  transition: 0.5s; /*Скорость перехода состояния элемента*/
+  animation: show 0.5s 1; /* Указываем название анимации, её время и количество повторов*/
+  animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+  animation-delay: 0.1s; /* Задержка перед началом */
 }
+
+@keyframes show{
+  0%{
+  opacity:0;
+  width: 0%;
+  }
+  100% {
+  opacity:1;
+  width: 75%;
+  }
+  }
+
 .MapImage {
   position: relative;
   top: 20px;

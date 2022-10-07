@@ -10,7 +10,7 @@ const CorporationNavbar = () => {
   };
   return (
     <div className={cl.corporation__navbar}>
-      <NavLink to="about" className={({ isActive }) => isActiveCheck(isActive)}>
+      <NavLink to="designing" className={({ isActive }) => isActiveCheck(isActive)}>
         <p className={cl.link__text}>
 
         
@@ -20,7 +20,7 @@ const CorporationNavbar = () => {
 
       </NavLink>
 
-      <NavLink to="history" className={({ isActive }) => isActiveCheck(isActive)}>
+      <NavLink to="production" className={({ isActive }) => isActiveCheck(isActive)}>
         <p className={cl.link__text}>
           
           
@@ -29,7 +29,7 @@ const CorporationNavbar = () => {
           Производство</p>
       </NavLink>
 
-      <NavLink to="achivements" className={({ isActive }) => isActiveCheck(isActive)}>
+      <NavLink to="montage" className={({ isActive }) => isActiveCheck(isActive)}>
         <p className={cl.link__text}>
           
           

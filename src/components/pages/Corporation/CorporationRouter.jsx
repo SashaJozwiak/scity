@@ -9,9 +9,9 @@ const CorporationRouter = () => {
   return (
     <Routes>
       <Route path="/" element={<CorporationMain />} />
-      <Route path="about" element={<CorporationAbout />} />
-      <Route path="history" element={<CorporationHistory />} />
-      <Route path="achivements" element={<CorporationAchivements />} />
+      <Route path="designing" element={<CorporationAbout />} />
+      <Route path="production" element={<CorporationHistory />} />
+      <Route path="montage" element={<CorporationAchivements />} />
     </Routes>
   );
 };

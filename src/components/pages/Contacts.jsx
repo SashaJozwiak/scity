@@ -6,20 +6,35 @@ import { renderToString } from 'react-dom/server'
 import marker from './../../../src/assets/logo/logo.gif'
 
 import cl from "../pages/pages_scss/contacts.module.scss";
+import "../pages/pages_scss/contacts.module.scss";
 
 const Contacts = () => {
   //const content = renderToString(<div className={cl.ballooncontent}><h1>ООО «СТРОЙСИТИ», МОСКВА, ул.МНЕВНИКИ, 3/1, оф. 216</h1></div>);
   return (
-    <div>
-      
+    
       <div className={cl.mapwrapper}>
-      <div className={cl.contacts} >
-        <div className={cl.contactsblock}>
-        <h1 className={cl.title}>Контакты</h1>
-        
+        <div className={cl.contacts} >
+          <div className={cl.contactsblock}>
+            <h1 className={cl.title}>Контакты</h1>
+            {/* <p className={cl.text}>ООО «СТРОЙСИТИ»</p> */}
+            <address className={cl.text}>г.МОСКВА, ул. МНЕВНИКИ, 3/1, офис 216</address>
+            <a className={cl.phone}href="tel:+74951290169"> 📞 +7 (495) 129-01-69</a>
+
+              </div><div className={cl.divform}>
+                    
+              <div className={cl.forma}>
+              <p>feedback form soon</p>
+                    <div className={cl.format}>
+                      
+                    </div></div>
+
+                
+            
+
+          
+          </div>
+          
         </div>
-        
-      </div>
       
         <YMaps>
         
@@ -48,7 +63,7 @@ const Contacts = () => {
           </Map>
         </YMaps>
       </div>
-    </div>
+    
   );
 };
 
