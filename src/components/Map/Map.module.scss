@@ -2,6 +2,8 @@
   position: relative;
   width: 75%;
   margin: 0 auto;
+  top: -50px;
+
 }
 .MapImage {
   position: relative;
@@ -9,4 +11,79 @@
   width: 100%;
   opacity: 0.9;
   transition: 0.5s;
+
+}
+
+.legend {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+}
+
+.legendlist {
+  list-style-type: none;
+}
+
+.legendlists{
+  position: relative;
+  left: 10%;
+  background-color: rgba(146, 146, 146, 0.671);
+  border-radius: 10px;
+  padding: 3px;
+  user-select: none;
+  font-size: 0.8em;
+}
+
+.legendbutton1 {
+  width: 20px;
+  height: 20px;
+  background: inherit;
+  background-color: rgb(41, 65, 132);
+  border: 6px solid rgba(255, 252, 252, 0.938);
+  border-radius: 50%;
+  position: absolute;
+  transition: 0.5s;
+  box-shadow: 7px 7px 5px rgb(0 0 0 / 30%);
+  
+  &:hover {
+    transform: scale(1);
+    box-shadow: 7px 7px 5px rgb(0 0 0 / 60%);
+    transition: 0.5s;
+
+  }
+
+  &:hover .MapButtonCityName {
+    transition: 0.5s;
+    box-shadow: 7px 7px 5px rgb(0 0 0 / 60%);
+  }
+
+}
+
+.legendbutton2 {
+  width: 20px;
+  height: 20px;
+  background: inherit;
+  background-color: rgb(132, 41, 41);
+  border: 6px solid rgba(255, 252, 252, 0.938);
+  border-radius: 50%;
+  position: absolute;
+  transition: 0.5s;
+  box-shadow: 7px 7px 5px rgb(0 0 0 / 30%);
+  
+  &:hover {
+    transform: scale(1);
+    box-shadow: 7px 7px 5px rgb(0 0 0 / 60%);
+    transition: 0.5s;
+
+  }
+
+  &:hover .MapButtonCityName {
+    transition: 0.5s;
+    box-shadow: 7px 7px 5px rgb(0 0 0 / 60%);
+  }
+
+}
+
+.legendlistone {
+  padding-top: 3%;
 }
