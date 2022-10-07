@@ -1,24 +1,35 @@
 .mapwrapper {
   text-align: center;
-  margin: 0 auto;
+  //margin: 0 auto;
   width: 100%;
-  height: 100%;
+  //height: 100%;
   // padding-left: calc((100% - 960px) / 2);
   // padding-top: 40px;
+  opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+  transition: 0.5s; /*Скорость перехода состояния элемента*/
+  animation: show 0.9s 1; /* Указываем название анимации, её время и количество повторов*/
+  animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+  animation-delay: 0.1s; /* Задержка перед началом */
 }
+
+@keyframes show{
+  0%{
+  opacity:0;
+  width: 0%;
+  }
+  100% {
+  opacity:1;
+  width: 100%;
+  }
+  }
 
 
 .contacts {
   position: absolute;
-/*   top: 7%;
+  top: 7%;
   left: 7%;
-  width: 350px;
-  height: 450px; */
-  width: 100%;
-  height: 85%;
-  left: -70%;
-  top: -10%;
-  
+  width: 30%;
+  height: 25%; 
 
 
   background-color: white;
@@ -28,7 +39,7 @@
   //border: 3px dotted #576367;
   border-radius: 10px;
 
-  transform: skew(-8deg);
+  //transform: skew(-8deg);
   
 
 
@@ -40,27 +51,62 @@
     opacity: 1;
     box-shadow: 7px 7px 5px rgb(0 0 0 / 60%);
     transition: 0.5s;
-    left: -60%;
-
+    height: 70%;
+  }
+  &:hover .divform {
+    opacity: 1;
+    transition: 0.5s;
   }
 
   .contactsblock{
 
     text-align: center;
-  padding-left: 55%;
-  padding-top: 5%;
+    padding: 5%;
 
   .title {
     font-family: "helveticaneuecyrroman", "Helvetica", Verdana;
     font-size: 2rem;
-    padding-top: 10px;
+    //padding-top: 10px;
     text-transform: uppercase;
     color: #576367;
-    transform: skew(8deg);
+    //transform: skew(8deg);
 
+  }
+
+  .text {
+    padding: 5%;
+    font-weight: bold;
+  }
+  .phone {
+    font-size: large;
+    text-decoration:none;
+    color: #000;
   }
 }
 }
+
+.divform {
+  opacity: 0;
+  transition: 0.5s;
+
+  padding: 10%;
+
+}
+
+// FORM
+
+.input-at {
+  background-color: #000;
+}
+
+  .icons {
+    display: inline;
+    margin: 10px 10px -2px 0;
+    width: 19px;
+    height: 19px;
+    transition: 0.5s;
+
+  }
 
 .ballooncontent {
   width: 200px;
