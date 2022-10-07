@@ -1,6 +1,6 @@
 import React from "react";
 import pic1 from "../../../../assets/pics/production_1.jpg"
-import pic2 from "../../../../assets/pics/production_for_transparent.png"
+import pic2 from "../../../../assets/pics/production_for_transparent.jpg"
 import pic3 from "../../../../assets/pics/sertpic.jpg"
 
 import cl from "../../pages_scss/corporationabout.module.scss";

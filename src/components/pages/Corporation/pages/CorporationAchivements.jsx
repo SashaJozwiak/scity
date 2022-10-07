@@ -1,6 +1,6 @@
 import React from "react";
-import pic1 from "../../../../assets/pics/montazh.gif"
-import pic2 from "../../../../assets/pics/montazh2.gif"
+import pic1 from "../../../../assets/pics/montazh.jpg"
+import pic2 from "../../../../assets/pics/montazh2.jpg"
 
 import cl from "../../pages_scss/corporationabout.module.scss";
 
