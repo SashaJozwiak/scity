@@ -25,9 +25,42 @@
   transition: 0.3s;
   border-radius: 10px;
   border: 20px solid rgb(255, 255, 255);
-  overflow: auto;
+  overflow: hidden;
   padding-top: 20px;
   //opacity: 0.75;
+  position: relative;
+  .ContentContainer {
+    height: 100%;
+    overflow: auto;
+  }
+  .cross {
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    &::before {
+      content: "";
+      height: 100%;
+      width: 1px;
+      background: black;
+      position: absolute;
+      bottom: 0;
+      right: 9px;
+      transform: rotate(45deg);
+    }
+    &::after {
+      content: "";
+      height: 100%;
+      width: 1px;
+      background: black;
+      position: absolute;
+      bottom: 0;
+      right: 9px;
+      transform: rotate(-45deg);
+    }
+  }
   &__active {
     transform: scale(1);
   }

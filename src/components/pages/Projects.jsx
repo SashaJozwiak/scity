@@ -13,7 +13,6 @@ const Projects = () => {
       <Map>
         {
           MapMarkers.map((button) => {
-            const content = renderToString(button.content);
             return <MapButton
               setActive={setModalWindowActive}
               setContent={setContent}
@@ -21,7 +20,7 @@ const Projects = () => {
               city={button.city}
               top={button.top}
               left={button.left}
-              content={content}
+              content={button.content}
             />
           }
           )
