@@ -16,6 +16,7 @@ import Nvsk from '../../assets/project-photo/novosibirsk/project1.jpg';
 
 const MapMarkers = [
   {
+    style: 'blue',
     city: 'Москва',
     top: '44.5%',
     left: '12.2%',
@@ -47,6 +48,7 @@ const MapMarkers = [
     </ModalWindowContent>
   },
   {
+    style: 'blue',
     city: 'Санкт-Петербург',
     top: '31.4%',
     left: '12.7%',
@@ -58,6 +60,7 @@ const MapMarkers = [
     </ModalWindowContent>
   },
   {
+    style: 'blue',
     city: 'Екатеринбург',
     top: '60.5%',
     left: '27.5%',
@@ -75,6 +78,7 @@ const MapMarkers = [
     
   },
   {
+    style: 'blue',
     city: 'Новосибирск',
     top: '75.5%',
     left: '40.5%',
@@ -88,6 +92,7 @@ const MapMarkers = [
     
   },
   {
+    style: 'blue',
     city: 'Воронеж',
     top: '54.5%',
     left: '8.5%',

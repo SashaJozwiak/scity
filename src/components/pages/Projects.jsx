@@ -14,6 +14,7 @@ const Projects = () => {
         {
           MapMarkers.map((button) => {
             return <MapButton
+              style={button.style}
               setActive={setModalWindowActive}
               setContent={setContent}
               key={button.city}
