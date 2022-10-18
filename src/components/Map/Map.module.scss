@@ -105,3 +105,19 @@
 .legendlistone {
   padding-top: 3%;
 }
+
+
+
+
+@media (max-width: 1350px) {
+  .MapContainer  {
+  top: 100px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .MapContainer  {
+  top: 100px;
+  width: 120%;
+  }
+}

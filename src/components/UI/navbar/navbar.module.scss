@@ -132,3 +132,18 @@
     }
   }
 }
+
+@media (max-width: 1199px) {
+  .link__text  {
+/*     display: flex;
+    flex-direction: column; */
+    font-size: 1.1rem;
+  }
+}
+
+//in process
+@media (max-width: 768px) {
+  .link__text  {
+    content: ' ';
+  }
+}
