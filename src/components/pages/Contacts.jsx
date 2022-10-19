@@ -52,7 +52,7 @@ const Contacts = () => {
                 iconImageSize: [50, 65],
               }}
               properties={{
-                hintContent: 'ООО «СТРОЙСИТИ»',
+                hintContent: 'ООО «СТРОЙСИТИ» г.МОСКВА, ул. МНЕВНИКИ, 3/1, офис 216',
                 //balloonContent: content,
               }}
               modules={
