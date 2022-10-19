@@ -8,9 +8,9 @@ const FeedbackForm = () => {
       <form className={cl.form}>
         <label className={cl.label}>Ф.И.О.: <input className={cl.input} type="text" /></label>
         <label className={cl.label}>Email: <input className={cl.input} type="email" /></label>
-        <label className={`${cl.label} ${cl.message}`}>Сообщение: <input className={`${cl.input} ${cl.message}`} type="text" /></label>
+        <label className={`${cl.label} ${cl.message}`}>Сообщение: <textarea className={`${cl.input} ${cl.message}`} ></textarea></label>
       </form>
-    </div>
+    </div >
   )
 }
 
