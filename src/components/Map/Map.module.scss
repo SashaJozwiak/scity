@@ -43,6 +43,7 @@
 }
 
 .legendlists{
+  font-family: "Avenir";
   position: relative;
   left: 10%;
   background-color: rgba(146, 146, 146, 0.671);
@@ -63,10 +64,14 @@
   transition: 0.5s;
   box-shadow: 7px 7px 5px rgb(0 0 0 / 30%);
   
+  border-radius:50% 50% 0% 50%;
+  transform: rotate(45deg);
+  
   &:hover {
     transform: scale(1);
     box-shadow: 7px 7px 5px rgb(0 0 0 / 60%);
     transition: 0.5s;
+    transform: rotate(45deg);
 
   }
 
@@ -87,11 +92,15 @@
   position: absolute;
   transition: 0.5s;
   box-shadow: 7px 7px 5px rgb(0 0 0 / 30%);
+
+  border-radius:50% 50% 0% 50%;
+  transform: rotate(45deg);
   
   &:hover {
     transform: scale(1);
     box-shadow: 7px 7px 5px rgb(0 0 0 / 60%);
     transition: 0.5s;
+    transform: rotate(45deg);
 
   }
 
@@ -104,4 +113,20 @@
 
 .legendlistone {
   padding-top: 3%;
+}
+
+
+
+
+@media (max-width: 1350px) {
+  .MapContainer  {
+  top: 100px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .MapContainer  {
+  top: 100px;
+  width: 120%;
+  }
 }

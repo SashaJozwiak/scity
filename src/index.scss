@@ -1,6 +1,15 @@
 @import "./components/pages/pages_scss/ContactsYandexMap.scss";
 @import "./components/ModalWindow/ModalWindowContent.scss";
 
+@font-face {
+  font-family: 'Avenir';
+  src: local('Avenir'),
+	   url('../src/assets/fonts/Avenir-LightOblique.woff2') format('woff2'), 
+	   url('../src/assets/fonts/Avenir-LightOblique.woff') format('woff'),
+	   //url('/fonts/font.ttf') format('ttf'),
+	   //url('/fonts/font.eot') format('eot');
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -29,6 +38,7 @@ aside {
 }
 html,
 body {
+  font-family: Avenir, sans-serif;
   height: 100%;
   width: 100%;
   font-size: 100%;

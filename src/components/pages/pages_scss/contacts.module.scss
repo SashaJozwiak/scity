@@ -1,5 +1,5 @@
 .mapwrapper {
-  font-family: monospace;
+  font-family: "Avenir";
   text-align: center;
   //margin: 0 auto;
   width: 100%;
@@ -60,28 +60,34 @@
     padding: 5%;
 
   .title {
-    font-family: monospace;
+    font-family: 'Avenir', sans-serif;
     font-size: 2rem;
     //padding-top: 10px;
-    text-transform: uppercase;
+    //text-transform: uppercase;
     color: #576367;
     //transform: skew(8deg);
 
   }
 
   .text {
+    font-family: 'Avenir';
     padding: 5%;
     font-weight: bold;
   }
   .phone {
+    font-family: 'Avenir';
     font-size: large;
     text-decoration:none;
     color: #000;
+    border: 2px dotted gray;
+    padding: 5px;
+    border-radius: 10px;
   }
 }
 }
 
 .divform {
+  font-family: 'Avenir';
   opacity: 0;
   transition: 0.5s;
 

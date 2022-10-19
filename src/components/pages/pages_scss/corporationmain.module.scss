@@ -1,5 +1,16 @@
 
+
+@font-face {
+    font-family: 'Avenir';
+    src: local('Avenir'),
+         url('../../../assets/fonts/Avenir-LightOblique.woff2') format('woff2'), 
+         url('../../../assets/fonts/Avenir-LightOblique.woff') format('woff'),
+         //url('/fonts/font.ttf') format('ttf'),
+         //url('/fonts/font.eot') format('eot');
+  }
+
 .corporationabout {
+    font-family: "Avenir";
     display: flex;
     flex-direction: column;
     //width: 70rem;
@@ -45,7 +56,7 @@
 }
 
 .title {
-    font-family: monospace;
+    font-family: "Avenir";
     font-size: 22px;
     font-weight: bold;
     text-align: center;
