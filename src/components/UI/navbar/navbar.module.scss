@@ -1,4 +1,13 @@
 
+@font-face {
+  font-family: 'Avenir';
+  src: local('Avenir'),
+	   url('../../../assets/fonts/Avenir-LightOblique.woff2') format('woff2'), 
+	   url('../../../assets/fonts/Avenir-LightOblique.woff') format('woff'),
+	   //url('/fonts/font.ttf') format('ttf'),
+	   //url('/fonts/font.eot') format('eot');
+}
+
 .logos {
 
   //position: relative;
@@ -115,6 +124,7 @@
     }
 
     .link__text {
+      font-family: 'Avenir';
       transform: skewX(30deg);
     }
 

@@ -8,16 +8,22 @@
   position: absolute;
   transition: 0.5s;
   box-shadow: 7px 7px 5px rgb(0 0 0 / 30%);
+  
+  //box-shadow:-2px 2px 2px 0px #aaa;
+  border-radius:50% 50% 0% 50%;
+  transform: rotate(45deg);
 
   &:hover {
     transform: scale(1);
     box-shadow: 7px 7px 5px rgb(0 0 0 / 60%);
     transition: 0.5s;
+    transform: rotate(45deg);
   }
 
   &:hover .MapButtonCityName {
     transition: 0.5s;
     box-shadow: 7px 7px 5px rgb(0 0 0 / 60%);
+    //transform: rotate(45deg);
   }
 }
 .MapButton2 {
@@ -30,6 +36,9 @@
   position: absolute;
   transition: 0.5s;
   box-shadow: 7px 7px 5px rgb(0 0 0 / 30%);
+
+  border-radius:50% 50% 0% 50%;
+  transform: rotate(45deg);
 
   &:hover {
     transform: scale(1);
@@ -44,11 +53,11 @@
 }
 
 .MapButtonCityName {
-  font-family: monospace;
+  //font-family: "Avenir";
   display: inline-block;
   position: absolute;
-  left: 15px;
-  top: -5px;
+  left: 5px;
+  top: -47px;
   //width: 140px;
   white-space: nowrap;
 
@@ -60,9 +69,13 @@
   box-shadow: 5px 5px 3px rgb(0 0 0 / 30%);
   transition: 0.5s;
 
+  transform: rotate(316deg);
+  
+
   &:hover {
     transition: 0.5s;
     background-color: rgb(255, 255, 255);
     box-shadow: 7px 7px 5px rgb(0 0 0 / 60%);
+    //transform: rotate(-45deg);
   }
 }

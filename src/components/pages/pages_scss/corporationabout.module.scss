@@ -2,7 +2,19 @@
     width: 0;
   }
 
+
+  @font-face {
+    font-family: 'Avenir';
+    src: local('Avenir'),
+         url('../../../assets/fonts/Avenir-LightOblique.woff2') format('woff2'), 
+         url('../../../assets/fonts/Avenir-LightOblique.woff') format('woff'),
+         url('../../../assets/fonts/Avenir-LightOblique.ttf') format('ttf'),
+         url('../../../assets/fonts/Avenir-LightOblique.eot') format('eot');
+  }
+
+
 .corporationabout {
+    font-family: 'Avenir';
     display: flex;
     flex-direction: column;
     //width: 70rem;
@@ -45,7 +57,8 @@ margin-top: 50px;
 
 
 .transparent {
-    font-family: Tahoma, sans-serif;
+    
+    font-family: "Avenir";
     font-weight: bold;
     font-size: 40px;
     line-height: 50px;
@@ -61,7 +74,7 @@ margin-top: 50px;
 }
 
 .title {
-    font-family: monospace;
+    font-family: 'Avenir';
     font-size: 24px;
     font-weight: bold;
     text-align: center;
@@ -71,7 +84,7 @@ margin-top: 50px;
 }
 
 ul {
-    font-family: monospace;
+    font-family: 'Avenir';
     font-size: 18px;
     padding: 5px;
 }
