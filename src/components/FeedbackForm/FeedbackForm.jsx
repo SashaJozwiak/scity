@@ -1,8 +1,11 @@
 import React, { useRef } from "react";
 import cl from "./FeedbackForm.module.scss";
+import { send } from 'emailjs-com';
 
 const FeedbackForm = () => {
+  let canSend = true;
   const form = useRef();
+  const sendProps = [];
 
   const formOnSubmit = (e) => {
     e.preventDefault();
@@ -12,7 +15,7 @@ const FeedbackForm = () => {
         inputElem: form.current.querySelector('#input-name'),
         errorElem: form.current.querySelector('#error-name'),
         errorMsg: 'Имя должно быть от 2 до 70 символов, без цифр.',
-        pattern: /[a-zа-я]{1,20}/i
+        pattern: /[a-zа-я]{2,70}/i
       },
       {
         inputElem: form.current.querySelector('#input-email'),
@@ -23,19 +26,36 @@ const FeedbackForm = () => {
       {
         inputElem: form.current.querySelector('#input-message'),
         errorElem: form.current.querySelector('#error-message'),
-        errorMsg: 'Сообщение должно быть от 20 до 3000символов.',
-        pattern: /.{20,3000}/i
+        errorMsg: 'Сообщение должно быть от 3 до 3000символов.',
+        pattern: /.{3,5000}/i
       },
     ];
 
     elements.forEach((elem) => {
       elem.errorElem.innerText = '';
       if (!elem.pattern.test(elem.inputElem.value)) {
+        canSend = false;
         elem.errorElem.innerText = elem.errorMsg;
       } else {
+        sendProps.push(elem.inputElem.value);
         elem.inputElem.value = '';
       }
     });
+    if (canSend) {
+      const toSend = {
+        from_name: sendProps[0],
+        to_name: 'Стройсити',
+        message: sendProps[2],
+        reply_to: sendProps[1],
+      }
+      send(
+        'service_mxs6t1l',
+        'template_2t1qqoj',
+        toSend,
+        'i4R4kFPoSs5Btp7VP',
+      )
+      console.log('улетело');
+    }
   };
 
   return (
