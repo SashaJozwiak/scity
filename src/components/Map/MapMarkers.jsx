@@ -180,7 +180,7 @@ const MapMarkers = [
   {
     style: 'red',
     city: 'Владимир',
-    top: '41.5%',
+    top: '40.5%',
     left: '16.2%',
     content: <ModalWindowContent city={'Владимир'} >
       <ModalWindowProject
@@ -238,7 +238,7 @@ const MapMarkers = [
 
   {
     style: 'blue',
-    city: 'Петропавловск-Камчатский',
+    city: 'П.-Камчатский',
     top: '61%',
     left: '95.1%',
     content: <ModalWindowContent city={'Петропавловск-Камчатский'} >

@@ -3,7 +3,7 @@
   width: 75%;
   //height: 100%;
   margin: 0 auto;
-  //top: -60px;
+  top: -60px;
   vertical-align: auto;
   //vertical-align: middle;
 
@@ -46,7 +46,7 @@
 }
 
 .legendlists{
-  font-family: "Avenir";
+  font-family: "Marmelad", sans-serif;
   position: relative;
   left: 10%;
   background-color: rgba(240, 240, 240, 0.671);
@@ -54,7 +54,7 @@
   padding: 3px;
   user-select: none;
   font-size: 69%;
-  font-style: italic;
+  //font-style: italic;
 }
 
 .legendbutton1 {
@@ -134,7 +134,7 @@
 
 @media (max-width: 1024px) {
   .MapContainer  {
-  top: 100px;
+  top: 60px;
   width: 120%;
   }
 }
