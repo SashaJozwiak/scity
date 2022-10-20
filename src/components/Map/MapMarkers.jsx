@@ -80,8 +80,8 @@ const MapMarkers = [
   {
     style: 'blue',
     city: 'Новосибирск',
-    top: '75.5%',
-    left: '40.5%',
+    top: '69.5%',
+    left: '43.5%',
     content: <ModalWindowContent city={'Новосибирск'} >
       <ModalWindowProject
         text={'Биотехнопарк, г. Кольцово. Проектирование и изготовление'}
@@ -105,11 +105,54 @@ const MapMarkers = [
     </ModalWindowContent>
     
   },
-/*   {
-    city: 'Симферополь',
-    top: '59.5%',
+  {
+    style: 'red',
+    city: 'Красноярск',
+    top: '64%',
+    left: '48%',
+    content: <ModalWindowContent city={'Красноярск'} >
+      <ModalWindowProject
+        text={'project text'}
+        img={''}
+        
+      />
+      </ModalWindowContent>
+  },
+  {
+    style: 'blue',
+    city: 'Краснодар',
+    top: '62%',
+    left: '4%',
+    content: <ModalWindowContent city={'Краснодар'} >
+      <ModalWindowProject
+        text={'project text'}
+        img={''}
+        
+      />
+      </ModalWindowContent>
+  },
+
+  {
+    style: 'blue',
+    city: 'Калининград',
+    top: '29%',
+    left: '3%',
+    content: <ModalWindowContent city={'Калининград'} >
+      <ModalWindowProject
+        text={'project text'}
+        img={''}
+        
+      />
+      </ModalWindowContent>
+  },
+
+
+  {
+    style: 'blue',
+    city: 'Крым',
+    top: '56.5%',
     left: '0.4%',
-    content: <ModalWindowContent city={'Симферополь'} >
+    content: <ModalWindowContent city={'Крым'} >
       <ModalWindowProject
         text={'project text'}
         img={''}
@@ -117,7 +160,96 @@ const MapMarkers = [
       />
     </ModalWindowContent>
     
-  }, */
+  },
+
+  {
+    style: 'red',
+    city: 'Клин',
+    top: '42.5%',
+    left: '11.4%',
+    content: <ModalWindowContent city={'Клин'} >
+      <ModalWindowProject
+        text={'project text'}
+        img={''}
+        
+      />
+    </ModalWindowContent>
+    
+  },
+
+  {
+    style: 'red',
+    city: 'Владимир',
+    top: '41.5%',
+    left: '16.2%',
+    content: <ModalWindowContent city={'Владимир'} >
+      <ModalWindowProject
+        text={'project text'}
+        img={''}
+        
+      />
+    </ModalWindowContent>
+    
+  },
+
+  {
+    style: 'red',
+    city: 'Калуга',
+    top: '48.7%',
+    left: '10.4%',
+    content: <ModalWindowContent city={'Калуга'} >
+      <ModalWindowProject
+        text={'project text'}
+        img={''}
+        
+      />
+    </ModalWindowContent>
+    
+  },
+  {
+    style: 'blue',
+    city: 'Кемерово',
+    top: '75%',
+    left: '43.7%',
+    content: <ModalWindowContent city={'Кемерово'} >
+      <ModalWindowProject
+        text={'project text'}
+        img={''}
+        
+      />
+    </ModalWindowContent>
+    
+  },
+
+  {
+    style: 'blue',
+    city: 'Владивосток',
+    top: '96%',
+    left: '82.1%',
+    content: <ModalWindowContent city={'Владивосток'} >
+      <ModalWindowProject
+        text={'project text'}
+        img={''}
+        
+      />
+    </ModalWindowContent>
+    
+  },
+
+  {
+    style: 'blue',
+    city: 'Петропавловск-Камчатский',
+    top: '61%',
+    left: '95.1%',
+    content: <ModalWindowContent city={'Петропавловск-Камчатский'} >
+      <ModalWindowProject
+        text={'project text'}
+        img={''}
+        
+      />
+    </ModalWindowContent>
+    
+  },
 ];
 
 export default MapMarkers;
