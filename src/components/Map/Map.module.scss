@@ -1,9 +1,11 @@
 .MapContainer {
   position: relative;
   width: 75%;
+  //height: 100%;
   margin: 0 auto;
   top: -60px;
   vertical-align: auto;
+  //vertical-align: middle;
 
   opacity:0; /*Элемент полностью прозрачный (невидимый)*/
   transition: 0.5s; /*Скорость перехода состояния элемента*/
@@ -29,6 +31,7 @@
   width: 100%;
   opacity: 0.9;
   transition: 0.5s;
+  
 
 }
 
@@ -43,14 +46,15 @@
 }
 
 .legendlists{
-  font-family: "Avenir";
+  font-family: "Marmelad", sans-serif;
   position: relative;
   left: 10%;
-  background-color: rgba(146, 146, 146, 0.671);
+  background-color: rgba(240, 240, 240, 0.671);
   border-radius: 10px;
   padding: 3px;
   user-select: none;
-  font-size: 0.8em;
+  font-size: 69%;
+  //font-style: italic;
 }
 
 .legendbutton1 {
@@ -83,17 +87,18 @@
 }
 
 .legendbutton2 {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   background: inherit;
   background-color: rgb(132, 41, 41);
-  border: 6px solid rgba(255, 252, 252, 0.938);
-  border-radius: 50%;
+  border: 5px solid rgba(255, 252, 252, 0.938);
+  //border-radius: 50%;
   position: absolute;
   transition: 0.5s;
   box-shadow: 7px 7px 5px rgb(0 0 0 / 30%);
+  
 
-  border-radius:50% 50% 0% 50%;
+  //border-radius:50% 50% 0% 50%;
   transform: rotate(45deg);
   
   &:hover {
@@ -112,7 +117,7 @@
 }
 
 .legendlistone {
-  padding-top: 3%;
+  padding-top: 5%;
 }
 
 
@@ -120,13 +125,16 @@
 
 @media (max-width: 1350px) {
   .MapContainer  {
-  top: 100px;
+  //top: 100px;
+  overflow: visible;
   }
+
+  
 }
 
 @media (max-width: 1024px) {
   .MapContainer  {
-  top: 100px;
+  top: 60px;
   width: 120%;
   }
 }

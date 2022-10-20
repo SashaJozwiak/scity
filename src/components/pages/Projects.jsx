@@ -5,11 +5,13 @@ import ModalWindow from "../ModalWindow/ModalWindow.jsx";
 import MapMarkers from "../Map/MapMarkers.jsx";
 import { renderToString } from 'react-dom/server'
 
+import '../pages/pages_scss/projects.module.scss'
+
 const Projects = () => {
   const [modalWindowActive, setModalWindowActive] = useState(false);
   const [content, setContent] = useState(null);
   return (
-    <div>
+    <div className="wrapper">
       <Map>
         {
           MapMarkers.map((button) => {
