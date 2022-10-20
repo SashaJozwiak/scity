@@ -1,5 +1,5 @@
 .mapwrapper {
-  font-family: monospace;
+  font-family: "Avenir";
   text-align: center;
   //margin: 0 auto;
   width: 100%;
@@ -28,9 +28,9 @@
   position: absolute;
   top: 7%;
   left: 7%;
-  width: 30%;
-  height: 25%;
   overflow: hidden;
+  width: 400px;
+  height: 25%; 
 
   background-color: white;
   z-index: 5;
@@ -53,18 +53,24 @@
     transition: 0.5s;
   }
 
-  .contactsblock {
+  &:hover .arrow8 {
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  .contactsblock{
+
     text-align: center;
     padding: 5%;
 
-    .title {
-      font-family: monospace;
-      font-size: 2rem;
-      //padding-top: 10px;
-      text-transform: uppercase;
-      color: #576367;
-      //transform: skew(8deg);
-    }
+  .title {
+    font-family: 'Russo One', sans-serif;
+    font-size: 2rem;
+    //padding-top: 10px;
+    //text-transform: uppercase;
+    //color: #576367;
+    color: rgb(90, 115, 137);
+    //transform: skew(8deg);
 
     .text {
       padding: 5%;
@@ -76,9 +82,88 @@
       color: #000;
     }
   }
+
+  .text {
+    font-family: 'Avenir', sans-serif;
+    padding: 5%;
+    font-weight: bold;
+    font-style: italic;
+  }
+  .phone {
+    font-family: 'Avenir';
+    font-size: large;
+    text-decoration:none;
+    color: #000;
+    //border: 2px dotted gray;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+    box-shadow: 3px 3px 2px rgba(0,0,0,0.3);
+    /* background-color: #294284;
+    color: white; */
+  }
+  .phone:hover {
+    background-color: #294184c2;
+    color: white;
+    transition: 0.5s;
+    box-shadow: 7px 7px 5px rgba(0,0,0,0.6); 
+  }
+
+  .phone:hover .icons {
+    fill: white;
+  }
+
+}
 }
 
+//ARROW =================================
+
+.arrow8 {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin: 20px auto 200px auto;
+  margin: auto 0 auto 43.5% ;
+  margin-top: 30px;
+  
+}
+.arrow8:before,
+.arrow8:after {
+  content: '';
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border-left: 2.5px solid rgb(90, 115, 137);
+  border-bottom: 2.5px solid rgb(90, 115, 137);
+  animation: arrow8 3s linear infinite;
+  box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.3); 
+}
+.arrow8:after {
+  animation: arrow8 3s linear infinite -1.5s;
+}
+@keyframes arrow8 {
+  0% {
+      opacity: 0;
+      transform: translate(0, -53px) rotate(-45deg);
+  }
+  10%, 90% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;  
+      transform: translate(0, 0) rotate(-45deg);
+  }
+  100% {
+      opacity: 0;
+      transform: translate(0, 53px) rotate(-45deg);
+  }
+}
+
+//========================
+
 .divform {
+  font-family: 'Avenir';
   opacity: 0;
   transition: 0.5s;
 

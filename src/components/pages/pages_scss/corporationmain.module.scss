@@ -1,5 +1,16 @@
 
+
+@font-face {
+    font-family: 'Avenir';
+    src: local('Avenir'),
+         url('../../../assets/fonts/Avenir-LightOblique.woff2') format('woff2'), 
+         url('../../../assets/fonts/Avenir-LightOblique.woff') format('woff'),
+         //url('/fonts/font.ttf') format('ttf'),
+         //url('/fonts/font.eot') format('eot');
+  }
+
 .corporationabout {
+    font-family: "Avenir";
     display: flex;
     flex-direction: column;
     //width: 70rem;
@@ -9,7 +20,7 @@
     padding: 10px 25px 50px 25px;
     z-index: -1;
     margin-top: 50px;
-    width: 1000px;
+    width: 90%;
     box-shadow: 7px 7px 5px rgba(0,0,0,0.6); 
 /*     transition-delay: 5s;
     transition: 5s; */
@@ -45,13 +56,13 @@
 }
 
 .title {
-    font-family: monospace;
+    font-family: 'Marmelad', sans-serif;
     font-size: 22px;
     font-weight: bold;
     text-align: center;
     color: rgb(90, 115, 137);
     //padding: 10px;
-    text-transform: uppercase;
+    //text-transform: uppercase;
     margin-top: 20px;
     
 }

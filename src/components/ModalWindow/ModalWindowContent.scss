@@ -1,6 +1,8 @@
 .content-title {
   //padding-top: 5px;
-  font-family: monospace;
+  
+  font-family: 'Russo One', sans-serif;
+
   font-size: 2rem;
   text-align: center;
 }
@@ -12,10 +14,12 @@
 }
 
 .content-text {
-  font-family: monospace;
+  
+  font-family: "Marmelad", sans-serif;
   color:#294284 ;
   text-align: center;
   font-size: 1.5rem;
+  overflow: auto;
   
 }
 
