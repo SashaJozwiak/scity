@@ -6,32 +6,31 @@
   //height: 100%;
   // padding-left: calc((100% - 960px) / 2);
   // padding-top: 40px;
-  opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+  opacity: 0; /*Элемент полностью прозрачный (невидимый)*/
   transition: 0.5s; /*Скорость перехода состояния элемента*/
   animation: show 0.9s 1; /* Указываем название анимации, её время и количество повторов*/
   animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
   animation-delay: 0.1s; /* Задержка перед началом */
 }
 
-@keyframes show{
-  0%{
-  opacity:0;
-  width: 0%;
+@keyframes show {
+  0% {
+    opacity: 0;
+    width: 0%;
   }
   100% {
-  opacity:1;
-  width: 100%;
+    opacity: 1;
+    width: 100%;
   }
-  }
-
+}
 
 .contacts {
   position: absolute;
   top: 7%;
   left: 7%;
+  overflow: hidden;
   width: 400px;
   height: 25%; 
-
 
   background-color: white;
   z-index: 5;
@@ -73,6 +72,15 @@
     color: rgb(90, 115, 137);
     //transform: skew(8deg);
 
+    .text {
+      padding: 5%;
+      font-weight: bold;
+    }
+    .phone {
+      font-size: large;
+      text-decoration: none;
+      color: #000;
+    }
   }
 
   .text {
@@ -160,7 +168,6 @@
   transition: 0.5s;
 
   padding: 10%;
-
 }
 
 // FORM
@@ -169,14 +176,13 @@
   background-color: #000;
 }
 
-  .icons {
-    display: inline;
-    margin: 10px 10px -2px 0;
-    width: 19px;
-    height: 19px;
-    transition: 0.5s;
-
-  }
+.icons {
+  display: inline;
+  margin: 10px 10px -2px 0;
+  width: 19px;
+  height: 19px;
+  transition: 0.5s;
+}
 
 .ballooncontent {
   width: 200px;
