@@ -3,16 +3,23 @@ import { HashRouter } from "react-router-dom";
 import Navbar from "./UI/navbar/navbar.jsx";
 import AppRouter from "./AppRouter.jsx";
 import BacgroundVideo from "./UI/BackgroundVideo/BackgroundVideo.jsx";
+import Header from "./UI/Header/Header.jsx";
+import StroyCityLogo from "./UI/StroyCityLogo/StroyCityLogo.jsx";
+import MadeInRussiaLogo from "./UI/MadeInRussiaLogo/MadeInRussiaLogo.jsx";
 
 const App = () => {
   return (
-    <div>
+    <React.Fragment>
       <BacgroundVideo />
       <HashRouter>
-        <Navbar />
         <AppRouter />
+        <Header>
+          <StroyCityLogo />
+          <Navbar />
+          <MadeInRussiaLogo />
+        </Header>
       </HashRouter>
-    </div>
+    </React.Fragment>
   );
 };
 

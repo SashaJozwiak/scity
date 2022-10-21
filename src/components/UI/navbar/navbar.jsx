@@ -1,10 +1,7 @@
 import React from "react";
-import { NavLink, useNavigate } from "react-router-dom";
-import logo2 from "../../../assets/logo/logo_3.svg"
+import { NavLink } from "react-router-dom";
 import cl from "./navbar.module.scss";
 import icons from "./icons.jsx";
-import StroyCityLogo from "../StroyCityLogo/StroyCityLogo.jsx";
-import MadeInRussiaLogo from "../MadeInRussiaLogo/MadeInRussiaLogo.jsx";
 
 const {
   corporationIcon,
@@ -14,7 +11,6 @@ const {
 } = icons(cl.icons);
 
 const Navbar = () => {
-  const navigator = useNavigate();
   const isActiveCheck = (isActive) => {
     return isActive
       ? `${cl.navbar__link} ${cl.navbar__link_active}`
@@ -22,8 +18,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className={cl.navbar}>
-      <StroyCityLogo navigator={() => navigator("/")} />
+    <nav className={cl.navbar}>
       <NavLink className={({ isActive }) => isActiveCheck(isActive)} to="/corporation">
         <p className={cl.link__text}>
           {corporationIcon}
@@ -40,8 +35,7 @@ const Navbar = () => {
         <p className={cl.link__text}>
           {contactsIcon}
           Контакты</p></NavLink>
-      <MadeInRussiaLogo navigator={() => navigator("/")} />
-    </div>
+    </nav>
   );
 };
 
