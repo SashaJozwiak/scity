@@ -17,15 +17,17 @@ const Contacts = () => {
 
         </div>
 
-        <div className={cl.arrow8}>
+        {/* <div className={cl.arrow8}>
           <span></span>
           <span></span>
           <span></span>
-        </div>
+        </div> */}
 
         <FeedbackForm />
 
       </div>
+
+      
 
       <YMaps>
 

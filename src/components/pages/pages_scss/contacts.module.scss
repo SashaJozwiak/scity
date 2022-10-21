@@ -30,7 +30,7 @@
   left: 7%;
   overflow: hidden;
   width: 400px;
-  height: 25%; 
+  height: 55%; 
 
   background-color: white;
   z-index: 5;
@@ -46,7 +46,7 @@
     opacity: 1;
     box-shadow: 7px 7px 5px rgb(0 0 0 / 60%);
     transition: 0.5s;
-    height: 70%;
+    height: 55%;
   }
   &:hover .divform {
     opacity: 1;
@@ -84,13 +84,13 @@
   }
 
   .text {
-    font-family: 'Avenir', sans-serif;
+    font-family:'Marmelad', sans-serif;
     padding: 5%;
     font-weight: bold;
     font-style: italic;
   }
   .phone {
-    font-family: 'Avenir';
+    font-family: "Russo One", sans-serif;
     font-size: large;
     text-decoration:none;
     color: #000;

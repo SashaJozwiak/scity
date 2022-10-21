@@ -26,7 +26,7 @@ const FeedbackForm = () => {
       {
         inputElem: form.current.querySelector('#input-message'),
         errorElem: form.current.querySelector('#error-message'),
-        errorMsg: 'Сообщение должно быть от 3 до 3000символов.',
+        errorMsg: 'Сообщение должно быть от 3 до 5000 символов.',
         pattern: /.{3,5000}/i
       },
     ];
@@ -63,15 +63,15 @@ const FeedbackForm = () => {
       <h1 className={cl.title}>Свяжитесь с нами</h1>
       <form ref={form} className={cl.form} onSubmit={(e) => formOnSubmit(e)}>
         <div className={cl.inputContainer}>
-          <label className={cl.label}>Ф.И.О.: <input className={cl.input} id="input-name" type="text" /></label>
+          <label className={cl.label}>{/* Ф.И.О.:  */}<input className={cl.input} id="input-name" type="text" placeholder='Ф.И.О.'/></label>
           <h2 className={cl.error} id="error-name"></h2>
         </div>
         <div className={cl.inputContainer}>
-          <label className={cl.label}>Email: <input className={cl.input} id="input-email" type="text" /></label>
+          <label className={cl.label}>{/* Email:  */}<input className={cl.input} id="input-email" type="text" placeholder='Электронная почта' /></label>
           <h2 className={cl.error} id="error-email"></h2>
         </div>
         <div className={cl.inputContainer}>
-          <label className={`${cl.label} ${cl.message}`}>Сообщение: <textarea className={`${cl.input} ${cl.message}`} id="input-message" ></textarea></label>
+          <label className={`${cl.label} ${cl.message}`}>{/* Сообщение: */} <textarea className={`${cl.input} ${cl.message}`} id="input-message" placeholder='Сообщение'></textarea></label>
           <h2 className={cl.error} id="error-message"></h2>
         </div>
         <button type="submit" className={cl.submit} >Отправить</button>
