@@ -1,11 +1,10 @@
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import logo from "../../../assets/logo/logo.gif"
-import logoback from "../../../assets/logo/logo2_svg.svg"
 import logo2 from "../../../assets/logo/logo_3.svg"
 import cl from "./navbar.module.scss";
 import icons from "./icons.jsx";
 import StroyCityLogo from "../StroyCityLogo/StroyCityLogo.jsx";
+import MadeInRussiaLogo from "../MadeInRussiaLogo/MadeInRussiaLogo.jsx";
 
 const {
   corporationIcon,
@@ -41,12 +40,7 @@ const Navbar = () => {
         <p className={cl.link__text}>
           {contactsIcon}
           Контакты</p></NavLink>
-      <img
-        className={cl.logo}
-        src={logo2}
-        alt={"logo"}
-        onClick={() => navigator("/")}
-      />
+      <MadeInRussiaLogo navigator={() => navigator("/")} />
     </div>
   );
 };
