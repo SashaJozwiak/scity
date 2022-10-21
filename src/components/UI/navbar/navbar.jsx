@@ -5,6 +5,7 @@ import logoback from "../../../assets/logo/logo2_svg.svg"
 import logo2 from "../../../assets/logo/logo_3.svg"
 import cl from "./navbar.module.scss";
 import icons from "./icons.jsx";
+import StroyCityLogo from "../StroyCityLogo/StroyCityLogo.jsx";
 
 const {
   corporationIcon,
@@ -23,18 +24,7 @@ const Navbar = () => {
 
   return (
     <div className={cl.navbar}>
-      <div className={cl.logos} onClick={() => navigator("/")}>
-        <img
-          className={cl.logofont}
-          src={logo}
-          alt={"logo"}
-        />
-        <img
-          className={cl.logback}
-          src={logoback}
-          alt={"logo"}
-        />
-      </div>
+      <StroyCityLogo navigator={() => navigator("/")} />
       <NavLink className={({ isActive }) => isActiveCheck(isActive)} to="/corporation">
         <p className={cl.link__text}>
           {corporationIcon}
