@@ -1,0 +1,23 @@
+.logos {
+  color: white;
+  cursor: pointer;
+  transition: 1s ease-in-out;
+  transform-style: preserve-3d;
+  &:hover {
+    transform: rotateY(0.5turn);
+  }
+  .logofont {
+    position: absolute;
+    left: 60px;
+    height: 100%;
+    margin: auto;
+    backface-visibility: hidden;
+    transition: 1s ease-in-out;
+    object-fit: cover;
+  }
+  .logback {
+    margin: auto;
+    backface-visibility: hidden;
+    transform: rotateY(0.5turn);
+  }
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import { YMaps, Map, Placemark } from "react-yandex-maps";
-import marker from './../../../src/assets/logo/logo.gif'
+import marker from './../../../src/assets/logo/logo1_svg.svg'
 import cl from "../pages/pages_scss/contacts.module.scss";
 import "../pages/pages_scss/contacts.module.scss";
 import FeedbackForm from "../FeedbackForm/FeedbackForm.jsx";
