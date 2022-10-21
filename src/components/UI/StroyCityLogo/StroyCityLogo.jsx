@@ -1,11 +1,13 @@
 import React from "react";
-import logo from "./logo1_svg.svg";
-import logo2 from "./logo2_svg.svg";
+import { useNavigate } from "react-router-dom";
+import logo from "../../../assets/logo/logo1_svg.svg";
+import logo2 from "../../../assets/logo/logo2_svg.svg";
 import cl from "./StroyCityLogo.module.scss";
 
-const StroyCityLogo = ({ navigator }) => {
+const StroyCityLogo = () => {
+  const navigator = useNavigate();
   return (
-    <div className={cl.logos} onClick={navigator}>
+    <div className={cl.logos} onClick={() => navigator("/")}>
       <img
         className={cl.logofont}
         src={logo}
