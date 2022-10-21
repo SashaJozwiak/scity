@@ -1,24 +1,46 @@
 .container {
   display: flex;
   flex-direction: column;
+  padding-top: 40px;
   .title {
+    font-family: "Russo One", sans-serif;
     font-size: 1.5rem;
+    padding-bottom: 20px;
+    color: rgb(90, 115, 137);
+
   }
   .form {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    //align-items: start;
     .submit {
       // margin-left: 100px;
+      font-family: "Russo One", sans-serif;
+      text-transform: uppercase;
       align-self: center;
       height: 30px;
       width: 100px;
       background-color: inherit;
-      border: solid black 1px;
+      //border: solid black 1px;
+      border-radius: 10px;
+      //margin-top: 10px;
+      box-shadow: 3px 3px 2px rgb(0 0 0 / 0.3);
+      transition: 0.5s;
     }
+
+    .submit:hover{
+      background-color: #294184c2;
+      color: white;
+      transition: 0.5s;
+      box-shadow: 7px 7px 5px rgba(0,0,0,0.6); 
+    }
+
+
     .inputContainer {
       display: flex;
       flex-direction: column;
+      justify-content: end;
+      //padding-bottom: 5px;
       .error {
         height: 1rem;
         line-height: 1rem;
@@ -36,13 +58,30 @@
       align-items: center;
       justify-content: space-between;
       .input {
-        border: solid black 1px;
-        height: 20px;
+        //border: solid black 1px;
+        font-family: "Russo One", sans-serif;
+        //font-family:'Marmelad', sans-serif;
+        //font-weight: bold;
+        border-radius: 10px;
+        box-shadow: 3px 3px 2px rgb(0 0 0 / 0.3);
+        height: 30px;
         width: 200px;
+        padding-left: 10px;
+        color: rgb(0, 0, 0);
       }
+
+      .input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.8s ease;}
+      .input::-moz-placeholder                {opacity: 1; transition: opacity 0.8s ease;}
+      .input:-moz-placeholder                 {opacity: 1; transition: opacity 0.8s ease;}
+      .input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.8s ease;}
+      .input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.8s ease;}
+      .input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.8s ease;}
+      .input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.8s ease;}
+      .input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.8s ease;}
+
       .input.message {
         margin-top: 4px;
-        height: 100px;
+        height: 120px;
         resize: none;
       }
     }
