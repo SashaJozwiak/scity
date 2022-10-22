@@ -14,7 +14,7 @@ import Ekb2 from '../../assets/project-photo/Ekb/project2.jpg';
 import SPb from '../../assets/project-photo/petersburg/project1.jpg';
 import Nvsk from '../../assets/project-photo/novosibirsk/project1.jpg';
 
-const MapMarkers = [
+const MapMarkersRF = [
   {
     style: 'blue',
     city: 'Москва',
@@ -252,4 +252,4 @@ const MapMarkers = [
   },
 ];
 
-export default MapMarkers;
+export default MapMarkersRF;
