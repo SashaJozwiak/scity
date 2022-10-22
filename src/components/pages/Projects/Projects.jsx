@@ -1,11 +1,9 @@
 import React, { useState } from "react";
-import Map from "../Map/Map.jsx";
-import MapButton from "../UI/MapButton/MapButton.jsx";
-import ModalWindow from "../ModalWindow/ModalWindow.jsx";
-import MapMarkers from "../Map/MapMarkers.jsx";
-import { renderToString } from 'react-dom/server'
-
-import '../pages/pages_scss/projects.module.scss'
+import Map from "../../Map/Map.jsx";
+import MapButton from "../../UI/MapButton/MapButton.jsx";
+import ModalWindow from "../../ModalWindow/ModalWindow.jsx";
+import MapMarkers from "../../Map/MapMarkers.jsx";
+import '../../pages/pages_scss/projects.module.scss';
 
 const Projects = () => {
   const [modalWindowActive, setModalWindowActive] = useState(false);

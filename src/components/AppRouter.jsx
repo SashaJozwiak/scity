@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import Contacts from './pages/Contacts.jsx';
 import Corporation from './pages/Corporation/Corporation.jsx';
-import Projects from './pages/Projects.jsx';
+import Projects from './pages/Projects/Projects.jsx';
 import Partners from './pages/Partners.jsx';
 import Main from './pages/Main.jsx';
 
