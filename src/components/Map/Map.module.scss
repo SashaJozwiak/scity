@@ -12,6 +12,8 @@
   animation: show 0.5s 1; /* Указываем название анимации, её время и количество повторов*/
   animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
   animation-delay: 0.1s; /* Задержка перед началом */
+  display: flex;
+  justify-content: center;
 }
 
 @keyframes show{
@@ -28,7 +30,8 @@
 .MapImage {
   position: relative;
   top: 20px;
-  width: 100%;
+  width: auto;
+  max-height: 100vh;
   opacity: 0.9;
   transition: 0.5s;
   

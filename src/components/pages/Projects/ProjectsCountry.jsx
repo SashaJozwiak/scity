@@ -1,18 +1,14 @@
 import React, { useState } from "react";
-import Map from "../Map/Map.jsx";
-import MapButton from "../UI/MapButton/MapButton.jsx";
-import ModalWindow from "../ModalWindow/ModalWindow.jsx";
-import MapMarkers from "../Map/MapMarkers.jsx";
-import { renderToString } from 'react-dom/server'
+import MapButton from "../../UI/MapButton/MapButton.jsx";
+import ModalWindow from "../../ModalWindow/ModalWindow.jsx"
+import Map from "../../Map/Map.jsx";
 
-import '../pages/pages_scss/projects.module.scss'
-
-const Projects = () => {
+const ProjectsCountry = ({ mapSrc, MapMarkers }) => {
   const [modalWindowActive, setModalWindowActive] = useState(false);
   const [content, setContent] = useState(null);
   return (
     <div className="wrapper">
-      <Map>
+      <Map mapSrc={mapSrc}>
         {
           MapMarkers.map((button) => {
             return <MapButton
@@ -35,7 +31,7 @@ const Projects = () => {
         content={content}
       />
     </div>
-  );
-};
+  )
+}
 
-export default Projects;
+export default ProjectsCountry;
