@@ -1,18 +1,16 @@
 import React, { useState } from "react";
-import mapSrc from "../../../../assets/pics/RussianFederation.png";
-import MapMarkersRF from "../../../Map/MapMarkersRF.jsx";
-import MapButton from "../../../UI/MapButton/MapButton.jsx";
-import ModalWindow from "../../../ModalWindow/ModalWindow.jsx"
-import Map from "../../../Map/Map.jsx";
+import MapButton from "../../UI/MapButton/MapButton.jsx";
+import ModalWindow from "../../ModalWindow/ModalWindow.jsx"
+import Map from "../../Map/Map.jsx";
 
-const ProjectsRF = () => {
+const ProjectsCountry = ({ mapSrc, MapMarkers }) => {
   const [modalWindowActive, setModalWindowActive] = useState(false);
   const [content, setContent] = useState(null);
   return (
     <div className="wrapper">
       <Map mapSrc={mapSrc}>
         {
-          MapMarkersRF.map((button) => {
+          MapMarkers.map((button) => {
             return <MapButton
               style={button.style}
               setActive={setModalWindowActive}
@@ -36,4 +34,4 @@ const ProjectsRF = () => {
   )
 }
 
-export default ProjectsRF;
+export default ProjectsCountry;

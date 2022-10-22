@@ -1,13 +1,17 @@
 import React from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
-import ProjectsRF from "./pages/ProjectsRF.jsx";
+import ProjectsCountry from "./ProjectsCountry.jsx";
+import mapRF from "../../../assets/pics/RussianFederation.png";
+import mapRB from "../../../assets/pics/RepublicBelarus.png";
+import mapRK from "../../../assets/pics/RepublicKazakhstan.png";
+import MapMarkersRF from "../../Map/MapMarkersRF.jsx";
 
 const ProjectsRouter = () => {
   return (
     <Routes>
-      <Route path="rf" element={<ProjectsRF />} />
-      {/* <Route path="rb" element={<CorporationHistory />} />
-      <Route path="rk" element={<CorporationAchivements />} /> */}
+      <Route path="rf" element={<ProjectsCountry mapSrc={mapRF} MapMarkers={MapMarkersRF} />} />
+      <Route path="rb" element={<ProjectsCountry mapSrc={mapRB} MapMarkers={MapMarkersRF} />} />
+      <Route path="rk" element={<ProjectsCountry mapSrc={mapRK} MapMarkers={MapMarkersRF} />} />
       <Route path='*' element={< Navigate to='rf' />} />
     </Routes>
   );

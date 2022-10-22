@@ -6,7 +6,6 @@ import ProjectsRouter from "./ProjectsRouter.jsx";
 const Projects = () => {
   return (
     <div className="wrapper">
-      {/* <ProjectsRF /> */}
       <ProjectsNavbar />
       <ProjectsRouter />
     </div>
