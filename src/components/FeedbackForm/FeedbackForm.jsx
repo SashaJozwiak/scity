@@ -3,65 +3,45 @@ import cl from "./FeedbackForm.module.scss";
 import { send } from 'emailjs-com';
 
 const FeedbackForm = () => {
-  let canSend = true;
-  const form = useRef();
-  const sendProps = [];
+  const formRef = useRef();
 
   const formOnSubmit = (e) => {
     e.preventDefault();
+    const valid = formValidate(formRef.current);
 
-    const elements = [
+  };
+
+  const formValidate = (form) => {
+    let valid = true;
+    const fields = [
       {
-        inputElem: form.current.querySelector('#input-name'),
-        errorElem: form.current.querySelector('#error-name'),
-        errorMsg: 'Имя должно быть от 2 до 70 символов, без цифр.',
+        elem: form.elements[0],
         pattern: /[a-zа-я]{2,70}/i
       },
       {
-        inputElem: form.current.querySelector('#input-email'),
-        errorElem: form.current.querySelector('#error-email'),
-        errorMsg: 'Неверный email.',
+        elem: form.elements[1],
         pattern: /^([a-z0-9_\-\.])+\@([a-z0-9_\-\.])+\.([a-z]{2,4})$/i,
       },
       {
-        inputElem: form.current.querySelector('#input-message'),
-        errorElem: form.current.querySelector('#error-message'),
-        errorMsg: 'Сообщение должно быть от 3 до 5000 символов.',
+        elem: form.elements[2],
         pattern: /.{3,5000}/i
       },
     ];
 
-    elements.forEach((elem) => {
-      elem.errorElem.innerText = '';
-      if (!elem.pattern.test(elem.inputElem.value)) {
-        canSend = false;
-        elem.errorElem.innerText = elem.errorMsg;
-      } else {
-        sendProps.push(elem.inputElem.value);
-        elem.inputElem.value = '';
-      }
+    fields.forEach((field) => {
+      field.elem.classList.remove(`${cl.inputError}`);
+      if (!field.pattern.test(field.elem.value)) {
+        field.elem.classList.add(`${cl.inputError}`);
+        valid = false;
+      };
     });
-    if (canSend) {
-      const toSend = {
-        from_name: sendProps[0],
-        to_name: 'Стройсити',
-        message: sendProps[2],
-        reply_to: sendProps[1],
-      }
-      send(
-        'service_mxs6t1l',
-        'template_2t1qqoj',
-        toSend,
-        'i4R4kFPoSs5Btp7VP',
-      )
-      console.log('улетело');
-    }
+    return valid;
   };
 
   return (
     <div className={cl.container}>
       <h1 className={cl.title}>Свяжитесь с нами</h1>
-      <form ref={form} className={cl.form} onSubmit={(e) => formOnSubmit(e)}>
+      <form ref={formRef} className={cl.form} onSubmit={(e) => formOnSubmit(e)}>
         <div className={cl.inputContainer}>
           <label className={cl.label}>
             <input
