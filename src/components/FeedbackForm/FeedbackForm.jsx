@@ -5,10 +5,26 @@ import { send } from 'emailjs-com';
 const FeedbackForm = () => {
   const formRef = useRef();
 
-  const formOnSubmit = (e) => {
+  const formOnSubmit = async (e) => {
     e.preventDefault();
-    const valid = formValidate(formRef.current);
+    const form = formRef.current;
+    const valid = formValidate(form);
 
+    if (valid) {
+      const formData = new FormData(form);
+      const response = await fetch('sendmail.php', {
+        method: 'POST',
+        body: formData,
+      });
+      if (response.ok) {
+        form.reset();
+        console.log(formData);
+      } else {
+        alert('Во время отправки произошла ошибка');
+      }
+    } else {
+      alert('Заполните все поля');
+    }
   };
 
   const formValidate = (form) => {
