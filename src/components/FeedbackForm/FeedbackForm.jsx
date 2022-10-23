@@ -63,18 +63,49 @@ const FeedbackForm = () => {
       <h1 className={cl.title}>Свяжитесь с нами</h1>
       <form ref={form} className={cl.form} onSubmit={(e) => formOnSubmit(e)}>
         <div className={cl.inputContainer}>
-          <label className={cl.label}>{/* Ф.И.О.:  */}<input className={cl.input} id="input-name" name="name" type="text" placeholder='Ф.И.О.'/></label>
+          <label className={cl.label}>
+            <input
+              className={cl.input}
+              id="input-name"
+              name="name"
+              type="text"
+              placeholder='Ф.И.О.'
+            />
+          </label>
           <h2 className={cl.error} id="error-name"></h2>
         </div>
+
         <div className={cl.inputContainer}>
-          <label className={cl.label}>{/* Email:  */}<input className={cl.input} id="input-email" name="email" type="text" placeholder='Электронная почта' /></label>
+          <label className={cl.label}>
+            <input
+              className={cl.input}
+              id="input-email"
+              name="email"
+              type="text"
+              placeholder='Электронная почта'
+            />
+          </label>
           <h2 className={cl.error} id="error-email"></h2>
         </div>
+
         <div className={cl.inputContainer}>
-          <label className={`${cl.label} ${cl.message}`}>{/* Сообщение: */} <textarea className={`${cl.input} ${cl.message}`} id="input-message" name="message" placeholder='Сообщение'></textarea></label>
+          <label className={`${cl.label} ${cl.message}`}>
+            <textarea
+              className={`${cl.input} ${cl.message}`}
+              id="input-message"
+              name="message"
+              placeholder='Сообщение'
+            />
+          </label>
           <h2 className={cl.error} id="error-message"></h2>
         </div>
-        <button type="submit" className={cl.submit} >Отправить</button>
+
+        <button
+          type="submit"
+          className={cl.submit}
+        >
+          Отправить
+        </button>
       </form>
     </div>
   )
