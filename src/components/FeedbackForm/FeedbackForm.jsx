@@ -18,7 +18,6 @@ const FeedbackForm = () => {
       });
       if (response.ok) {
         form.reset();
-        console.log(formData);
       } else {
         alert('Во время отправки произошла ошибка');
       }
