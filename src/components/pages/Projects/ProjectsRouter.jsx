@@ -2,8 +2,8 @@ import React from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
 import ProjectsCountry from "./ProjectsCountry.jsx";
 import mapRF from "../../../assets/pics/RussianFederation.png";
-import mapRB from "../../../assets/pics/RepublicBelarus.png";
-import mapRK from "../../../assets/pics/RepublicKazakhstan.png";
+import mapRB from "../../../assets/pics/RepublicBelarus3.png";
+import mapRK from "../../../assets/pics/RepublicKazakhstan2.png";
 import MapMarkersRF from "../../Map/MapMarkersRF.jsx";
 
 const ProjectsRouter = () => {

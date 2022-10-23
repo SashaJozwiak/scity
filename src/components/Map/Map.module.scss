@@ -30,8 +30,9 @@
 .MapImage {
   position: relative;
   top: 20px;
-  width: auto;
-  max-height: 100vh;
+  //width: auto;
+  width: 100%;
+  //max-height: 100vh;
   opacity: 0.9;
   transition: 0.5s;
   

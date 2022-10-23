@@ -9,24 +9,26 @@ const ProjectsNavbar = () => {
       : `${cl.corp}`
   };
   return (
+    <div className={cl.corporation}>
     <div className={cl.corporation__navbar}>
       <NavLink to="rf" className={({ isActive }) => isActiveCheck(isActive)}>
         <p className={cl.link__text}>
-          Российская Федерация
+          Россия
         </p>
       </NavLink>
 
       <NavLink to="rb" className={({ isActive }) => isActiveCheck(isActive)}>
         <p className={cl.link__text}>
-          Республика Беларусь
+          Беларусь
         </p>
       </NavLink>
 
       <NavLink to="rk" className={({ isActive }) => isActiveCheck(isActive)}>
         <p className={cl.link__text}>
-          Республика Казахстан
+          Узбекистан
         </p>
       </NavLink>
+    </div>
     </div>
   );
 };
