@@ -69,6 +69,9 @@
         padding-left: 10px;
         color: rgb(0, 0, 0);
       }
+      .inputError{
+        box-shadow: 3px 3px 2px rgb(255, 0, 0);
+      }
 
       .input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.8s ease;}
       .input::-moz-placeholder                {opacity: 1; transition: opacity 0.8s ease;}
