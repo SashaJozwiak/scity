@@ -27,9 +27,13 @@
   }
   z-index: 1;
   display: flex;
+  justify-content: space-between;
+
   align-items: center;
   color: #f1f1f1;
-  padding: 5px;
+  //padding: 5px;
+  padding: 0px 5px 10px 5px;
+  width: calc(80vw - 200px);
 
   -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8)),
     linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
