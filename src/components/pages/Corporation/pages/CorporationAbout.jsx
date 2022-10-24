@@ -23,8 +23,10 @@ const CorporationAbout = () => {
           <li>Возможность изменения типов материалов и нагрузок.</li>
           <li>Возможность максимально воплощать желания Заказчика и замыслы архитектора в проектируемых конструкциях.</li>
         </ul>
+        {/* <div className={cl.imgone}> */}
+            <img className={cl.imgone} src={pic1} alt="editing project one" />
+        {/* </div> */}
         
-        <img className={cl.imgone} src={pic1} alt="editing project one" />
       </div>
 
       <div className={cl.project_one}>

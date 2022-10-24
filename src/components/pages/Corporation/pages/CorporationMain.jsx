@@ -11,9 +11,10 @@ const CorporationMain = () => {
         <div className={cl.corporationabout}>
         <div className={cl2.project_one}>
           <h1 className={cl2.transparent}>
+            <span className={cl2.transparent2}>СТРОЙСИТИ</span>
           ПРОЕКТИРОВАНИЕ, ПРОИЗВОДСТВО  И МОНТАЖ СВЕТОПРОЗРАЧНЫХ  КОНСТРУКЦИЙ
           </h1>
-          <img className={cl.logo} src={logo} alt="logo_stroycity" />
+          {/* <img className={cl.logo} src={logo} alt="logo_stroycity" /> */}
           {/* <h3 className={cl.title}>Реализуем самые сложные проекты  и нестандартные решения</h3> */}
 
         </div>
