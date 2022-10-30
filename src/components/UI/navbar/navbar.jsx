@@ -17,7 +17,7 @@ const Navbar = ({ burgerActive, setBurgerActive }) => {
       : cl.navbar__link
   }
   const navLinkOnClick = () => {
-    if (burgerActive) setBurgerActive(false);
+    //if (burgerActive) setBurgerActive(false);
   };
 
   return (

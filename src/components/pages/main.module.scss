@@ -1,0 +1,93 @@
+.corporation {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+
+  
+
+  align-items: center;
+  vertical-align: center;
+  margin: 0px auto;
+  padding-top: 10px;
+
+  z-index: 5001;
+
+  margin-top: -500px;
+  
+
+  //height: 10vh;
+  
+}
+
+.corporation2 {
+  margin-top: auto;
+}
+
+
+.corporationabout {
+  font-family: "Avenir";
+  display: flex;
+  flex-direction: column;
+  //width: 70rem;
+  //height: 30rem;
+  //background-color: rgba(255, 255, 255, 0.884);
+  border-radius: 10px;
+  padding: 120px 25px 50px 25px;
+  z-index: -1;
+  margin-top: 50px;
+  width: 1000px;
+  letter-spacing: 2px;
+  //box-shadow: 7px 7px 5px rgba(0,0,0,0.6); 
+/*     transition-delay: 5s;
+  transition: 5s; */
+
+  opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+  transition: 0.2s; /*Скорость перехода состояния элемента*/
+  animation: show 0.5s 1; /* Указываем название анимации, её время и количество повторов*/
+  animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+  animation-delay: 0.1s; /* Задержка перед началом */
+
+}
+
+@keyframes show{
+  0%{
+  opacity:0;
+  }
+  100% {
+  opacity:1;
+  }
+  }
+
+
+  .project_one {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px 0 10px;
+    opacity: 1;
+
+
+}
+
+
+
+
+.transparent {
+    font-family: 'Marmelad';
+    font-family: 'Russo One', sans-serif;
+    //font-family: sans-serif;
+    //font-family: 'Marmelad', sans-serif;
+    //font-weight: bold;
+    font-size: 33px;
+    line-height: 50px;
+    text-transform: uppercase;
+    background: rgba(0, 0, 0, 0);
+    color: rgb(247, 244, 244);
+    mix-blend-mode: multiply;
+    padding: 10px 20px;
+    display: inline-block;
+    text-shadow: 0 0 8px rgba(0,0,0,5), 0 2px 4px rgba(0,0,0,0.7);
+    text-align: center;
+    user-select: none;
+}

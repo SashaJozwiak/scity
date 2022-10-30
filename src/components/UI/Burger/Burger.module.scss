@@ -1,17 +1,25 @@
-$burger-color: red;
+$burger-color: white;
 
-.clickArea {
+
+
+/* .clickArea {
   position: relative;
-  bottom: 0;
+  bottom: 80vh; //92hv
+  left: 2vh; //40vw
   display: none;
-  @media (max-width: 768px) {
+  z-index: 5;
+
+  @media (max-width: 1920px) {
     width: 50px;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-}
+} */
+
+
+
 .burger {
   width: 30px;
   height: 20px;

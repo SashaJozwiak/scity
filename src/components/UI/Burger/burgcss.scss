@@ -1,0 +1,65 @@
+.logofontgo {
+    margin-bottom: 80vh;
+    opacity: 1;
+  }
+  
+  .logofontgo2 {
+    opacity: 0;
+    transition: 1s;
+  
+    //margin-bottom: 80vh;
+  }
+
+  .clickArea {
+    position: relative;
+    bottom: 80vh; //92hv
+    left: 2vh; //40vw
+    display: none;
+    z-index: 5;
+  
+    @media (max-width: 1920px) {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .clickArea2 {
+    position: relative;
+    bottom: 93vh;
+    left: 45vw;
+    display: none;
+    z-index: 5;
+    transition: 2s;
+
+    animation: burgtogo 2s forwards;
+    animation-timing-function:ease-in;
+  
+    @media (max-width: 1920px) {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  @keyframes burgtogo { 
+    from {
+        opacity: 1;
+   }
+
+   8% {
+    opacity: 0;
+   }
+
+   99% {
+    opacity: 0;
+   }
+
+   to {
+    opacity: 1;
+  }
+}

@@ -1,6 +1,8 @@
 import React from "react";
 import './ModalWindowContent.scss';
 
+
+
 const ModalWindowContent = ({ city, children }) => {
   return (
     <div className="content-block">
