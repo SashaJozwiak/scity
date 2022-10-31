@@ -1,6 +1,7 @@
 .logos {
   display: none;
-  z-index: 2;
+  height: 100px;
+  z-index: 1;
   color: white;
   cursor: pointer;
   transition: 1s ease-in-out;
@@ -13,7 +14,7 @@
   .logofont {
     position: absolute;
     left: 60px;
-    height: 100%;
+    height: 100px;
     margin: auto;
     backface-visibility: hidden;
     transition: 1s ease-in-out;
