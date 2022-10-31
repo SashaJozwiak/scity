@@ -14,6 +14,13 @@ import Ekb2 from '../../assets/project-photo/Ekb/project2.jpg';
 import SPb from '../../assets/project-photo/petersburg/project1.jpg';
 import Nvsk from '../../assets/project-photo/novosibirsk/project1.jpg';
 
+import Voronezh1 from '../../assets/project-photo/vrnzh/vrnzh1.jpg';
+
+import Vldvstk from '../../assets/project-photo/vldvstk/vldvstk1.jpg';
+import Vldvstk2 from '../../assets/project-photo/vldvstk/vldvstk2.jpg';
+
+import Kursk from '../../assets/project-photo/Kursk/Kursk.jpg';
+
 const MapMarkersRF = [
   {
     style: 'blue',
@@ -98,8 +105,8 @@ const MapMarkersRF = [
     left: '8.5%',
     content: <ModalWindowContent city={'Воронеж'} >
       <ModalWindowProject
-        text={'project text'}
-        img={''}
+        text={'Производственно-логистический комплекс «Ангстрем». Проектирование, изготовление, монтаж'}
+        img={Voronezh1}
         
       />
     </ModalWindowContent>
@@ -223,15 +230,33 @@ const MapMarkersRF = [
 
   {
     style: 'blue',
+    city: 'Курск',
+    top: '49%',
+    left: '7.7%',
+    content: <ModalWindowContent city={'Курск'} >
+      <ModalWindowProject
+        text={'Логистический комплекс для ЗАО «Контри-РУС». Проектирование, управление проектом.'}
+        img={Kursk}
+        
+      />
+    </ModalWindowContent>
+    
+  },
+
+  {
+    style: 'blue',
     city: 'Владивосток',
     top: '96%',
     left: '82.1%',
     content: <ModalWindowContent city={'Владивосток'} >
       <ModalWindowProject
-        text={'project text'}
-        img={''}
-        
-      />
+        text={'ТРЦ (светопрозрачный купол) во Владивостоке. Проектирование изготовление монтаж.'}
+        img={Vldvstk}
+        />
+        <ModalWindowProject
+        img={Vldvstk2}
+        />
+      
     </ModalWindowContent>
     
   },
