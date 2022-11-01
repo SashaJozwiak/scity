@@ -29,12 +29,23 @@
 
 } */
 
+.main-wrapper {
+    position: absolute;
+    
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
 
 .background {
     display: block;
     text-align: center;
     //background: rgba(206, 210, 221, 0.705) top center;  
-    padding-top: 10px;
+    //padding-top: 10px;
     margin: -10px auto;
     //width: 50%;
     height: 90px;
@@ -44,6 +55,9 @@
 
 
 .transparent {
+    position: fixed;
+
+    width: 100%;
     font-family: Tahoma, sans-serif;
     font-weight: bold;
     font-size: 50px;
@@ -52,7 +66,7 @@
     //width: 40%;
 
     text-align: center;
-    left: 50vw;
+    //left: 50vw;
       
     background: rgba(0, 0, 0, 0);
     color: rgb(247, 244, 244);
@@ -70,14 +84,21 @@
     
     //opacity: 0;
     margin-top: -3000px;
+    z-index: 1;
+
 }
 
 .transparent2 {
+    position: fixed;
     display: block;
     transition: 2s;
     
     //opacity: 1;
     margin-top: -10px;
+    margin-top: -90px;
+    margin-top: -15vh;
+    margin-top: auto;
+    margin: 0 auto;
 }
 
 .corporation {

@@ -17,11 +17,12 @@
     bottom: 9vh; //92hv
     left: -40vw; //40vw
     display: none;
-    z-index: 5;
+    z-index: 10 000;
     //border: 1px solid black;
     border-radius: 10%;
     background-color: rgba(128, 128, 128, 0.164);
     //transition: 0.3s;
+
     &:hover {
       transition: 0.3s;
       background-color: rgba(150, 149, 149, 0.521);
@@ -47,6 +48,7 @@
 
     animation: burgtogo 2s forwards;
     animation-timing-function:ease-in;
+    z-index: 10;
   
     @media (max-width: 2560px) {
       width: 50px;

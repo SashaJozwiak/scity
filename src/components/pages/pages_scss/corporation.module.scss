@@ -4,13 +4,15 @@
   flex-direction: column;
   justify-content: center;
   gap: 10px;
+  background-color: #f3f5fc;
 
   
 
   align-items: center;
   vertical-align: center;
-  margin: 0px auto;
+  margin: -5px auto;
   padding-top: 10px;
+  padding-bottom: 400px;
 
   z-index: 5001;
   
@@ -19,7 +21,7 @@
   
   &__navbar {
     display: flex;
-    position: fixed;
+    //position: fixed;
     top: 5px;
     //margin: 10px;
     //height: 10vh;
