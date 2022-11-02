@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import cl from "./navbar.module.scss";
 import icons from "./icons.jsx";
 
@@ -11,56 +10,36 @@ const {
 } = icons(cl.icons);
 
 const Navbar = ({ burgerActive, setBurgerActive }) => {
-  const isActiveCheck = (isActive) => {
-    return isActive
-      ? `${cl.navbar__link} ${cl.navbar__link_active}`
-      : cl.navbar__link
-  }
-  const navLinkOnClick = () => {
-    //if (burgerActive) setBurgerActive(false);
-  };
 
   return (
     <nav className={burgerActive ? `${cl.navbar} ${cl.navbar_active}` : `${cl.navbar}`}>
-      <NavLink
-        className={({ isActive }) => isActiveCheck(isActive)}
-        to="/corporation" onClick={navLinkOnClick}
-      >
+      <a className={`${cl.navbar__link} ${cl.navbar__link_active}`}>
         <p className={cl.link__text}>
           {corporationIcon}
           Деятельность
         </p>
-      </NavLink>
+      </a>
 
-      <NavLink
-        className={({ isActive }) => isActiveCheck(isActive)}
-        to="/projects" onClick={navLinkOnClick}
-      >
+      <a className={cl.navbar__link}>
         <p className={cl.link__text}>
           {projectsIcon}
           Проекты
         </p>
-      </NavLink>
+      </a>
 
-      <NavLink
-        className={({ isActive }) => isActiveCheck(isActive)}
-        to="/partners" onClick={navLinkOnClick}
-      >
+      <a className={cl.navbar__link}>
         <p className={cl.link__text}>
           {partnersIcon}
           Партнеры
         </p>
-      </NavLink>
+      </a>
 
-      <NavLink
-        className={({ isActive }) => isActiveCheck(isActive)}
-        to="/contacts" onClick={navLinkOnClick}
-      >
+      <a className={cl.navbar__link}>
         <p className={cl.link__text}>
           {contactsIcon}
           Контакты
         </p>
-      </NavLink>
+      </a>
     </nav>
   );
 };

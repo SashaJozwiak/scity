@@ -13,6 +13,9 @@ const App = () => {
   return (
     <React.Fragment>
       <BacgroundVideo />
+      <Header>
+        <Menu />
+      </Header>
       {/* <HashRouter>
         <AppRouter />
         <Header>
