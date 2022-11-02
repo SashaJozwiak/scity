@@ -23,7 +23,7 @@ const Burger = ({ burgerActive, setBurgerActive }) => {
   // });
 
   return (
-    <div>
+    <div className={cl.container}>
 
       {
         !burgerActive &&

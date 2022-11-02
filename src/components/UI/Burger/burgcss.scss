@@ -1,78 +1,81 @@
 .logofontgo {
-    //margin-bottom: 80vh;
+  //margin-bottom: 80vh;
+  opacity: 1;
+  height: 100px;
+}
+
+.logofontgo2 {
+  opacity: 0;
+  transition: 1s;
+  height: 100px;
+
+  //margin-bottom: 80vh;
+}
+
+.clickArea {
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  // bottom: 0;
+  // bottom: 9vh; //92hv
+  // left: -40vw; //40vw
+  display: none;
+  z-index: 10 000;
+  //border: 1px solid black;
+  border-radius: 10%;
+  background-color: rgba(128, 128, 128, 0.164);
+  //transition: 0.3s;
+
+  &:hover {
+    transition: 0.3s;
+    background-color: rgba(150, 149, 149, 0.521);
+    cursor: pointer;
+  }
+
+  @media (max-width: 2560px) {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.clickArea2 {
+  position: relative;
+  bottom: 9vh; //92hv
+  left: -40vw; //40vw
+  display: none;
+  //z-index: 5;
+  transition: 2s;
+
+  animation: burgtogo 2s forwards;
+  animation-timing-function: ease-in;
+  z-index: 10;
+
+  @media (max-width: 2560px) {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@keyframes burgtogo {
+  from {
     opacity: 1;
-    height: 100px;
   }
-  
-  .logofontgo2 {
+
+  8% {
     opacity: 0;
-    transition: 1s;
-    height: 100px;
-  
-    //margin-bottom: 80vh;
   }
 
-  .clickArea {
-    position: relative;
-    bottom: 9vh; //92hv
-    left: -40vw; //40vw
-    display: none;
-    z-index: 10 000;
-    //border: 1px solid black;
-    border-radius: 10%;
-    background-color: rgba(128, 128, 128, 0.164);
-    //transition: 0.3s;
-
-    &:hover {
-      transition: 0.3s;
-      background-color: rgba(150, 149, 149, 0.521);
-      cursor: pointer;
-    }
-  
-    @media (max-width: 2560px) {
-      width: 50px;
-      height: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  }
-
-  .clickArea2 {
-    position: relative;
-    bottom: 9vh; //92hv
-    left: -40vw; //40vw
-    display: none;
-    //z-index: 5;
-    transition: 2s;
-
-    animation: burgtogo 2s forwards;
-    animation-timing-function:ease-in;
-    z-index: 10;
-  
-    @media (max-width: 2560px) {
-      width: 50px;
-      height: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  }
-
-  @keyframes burgtogo { 
-    from {
-        opacity: 1;
-   }
-
-   8% {
+  99% {
     opacity: 0;
-   }
+  }
 
-   99% {
-    opacity: 0;
-   }
-
-   to {
+  to {
     opacity: 1;
   }
 }

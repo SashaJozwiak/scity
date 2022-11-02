@@ -1,7 +1,5 @@
 $burger-color: white;
 
-
-
 /* .clickArea {
   position: relative;
   bottom: 80vh; //92hv
@@ -17,8 +15,13 @@ $burger-color: white;
     justify-content: center;
   }
 } */
-
-
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
 
 .burger {
   width: 30px;
