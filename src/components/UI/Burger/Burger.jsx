@@ -18,9 +18,9 @@ const Burger = ({ burgerActive, setBurgerActive }) => {
   //     document.querySelector(".clickArea").classList.add("clickArea2");
   //   }
   // }, [burgerActive]);
-  window.addEventListener('resize', () => {
-    if (window.innerWidth > 768) setBurgerActive(false);
-  });
+  // window.addEventListener('resize', () => {
+  //   if (window.innerWidth > 768) setBurgerActive(false);
+  // });
 
   return (
     <div>
