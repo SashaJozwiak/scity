@@ -13,14 +13,14 @@ const App = () => {
   return (
     <React.Fragment>
       <BacgroundVideo />
-      <HashRouter>
+      {/* <HashRouter>
         <AppRouter />
         <Header>
           <StroyCityLogo />
           <Menu />
           <MadeInRussiaLogo />
         </Header>
-      </HashRouter>
+      </HashRouter> */}
     </React.Fragment >
   );
 };
