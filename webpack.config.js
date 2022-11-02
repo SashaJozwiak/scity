@@ -39,7 +39,13 @@ module.exports = {
     rules: [
       {
         test: /\.scss$/i,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+        use: [MiniCssExtractPlugin.loader, {
+          loader: 'css-loader', options: {
+            modules: {
+              localIdentName: "[name]__[local]___[hash:base64:5]",
+            }
+          }
+        }, 'sass-loader']
       },
       {
         test: /\.(?:ico|gif|png|jpg|jpeg|svg|mp4)$/i,

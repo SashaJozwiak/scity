@@ -1,10 +1,10 @@
-.logofontgo {
+:global(.logofontgo) {
   //margin-bottom: 80vh;
   opacity: 1;
   height: 100px;
 }
 
-.logofontgo2 {
+:global(.logofontgo2) {
   opacity: 0;
   transition: 1s;
   height: 100px;
@@ -12,7 +12,7 @@
   //margin-bottom: 80vh;
 }
 
-.clickArea {
+:global(.clickArea) {
   position: fixed;
   left: 10px;
   top: 10px;
@@ -41,7 +41,7 @@
   }
 }
 
-.clickArea2 {
+:global(.clickArea2) {
   position: relative;
   bottom: 9vh; //92hv
   left: -40vw; //40vw

@@ -8,6 +8,7 @@ import StroyCityLogo from "./UI/StroyCityLogo/StroyCityLogo.jsx";
 import MadeInRussiaLogo from "./UI/MadeInRussiaLogo/MadeInRussiaLogo.jsx";
 import Burger from "./UI/Burger/Burger.jsx";
 import Menu from "./Menu/Menu.jsx";
+import Main from "./pages/Main.jsx";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Header>
         <Menu />
       </Header>
+      <Main />
       {/* <HashRouter>
         <AppRouter />
         <Header>

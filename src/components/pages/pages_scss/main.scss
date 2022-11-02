@@ -29,10 +29,10 @@
 
 } */
 
-.main-wrapper {
+:global(.main-wrapper) {
     position: absolute;
-    
-    top:0;
+
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
@@ -40,21 +40,18 @@
     min-height: 100vh;
 }
 
-
-.background {
+:global(.background) {
     display: block;
     text-align: center;
-    //background: rgba(206, 210, 221, 0.705) top center;  
+    //background: rgba(206, 210, 221, 0.705) top center;
     //padding-top: 10px;
     margin: -10px auto;
     //width: 50%;
     height: 90px;
     border-radius: 10px;
-    
-}    
+}
 
-
-.transparent {
+:global(.transparent) {
     position: fixed;
 
     width: 100%;
@@ -67,13 +64,13 @@
 
     text-align: center;
     //left: 50vw;
-      
+
     background: rgba(0, 0, 0, 0);
     color: rgb(247, 244, 244);
     mix-blend-mode: multiply;
     padding: 20px 20px 10px 20px;
     //display: inline-block;
-    text-shadow: 0 0 8px rgba(0,0,0,5), 0 2px 4px rgba(0,0,0,0.7);
+    text-shadow: 0 0 8px rgba(0, 0, 0, 5), 0 2px 4px rgba(0, 0, 0, 0.7);
     //background: rgba(184, 185, 185, 0.925) top center;
     background: rgba(90, 115, 137, 0.493) top center;
     border-radius: 10px;
@@ -81,18 +78,17 @@
     user-select: none;
     //display: none;
     transition: 1s;
-    
+
     //opacity: 0;
     margin-top: -3000px;
     z-index: 1;
-
 }
 
-.transparent2 {
+:global(.transparent2) {
     position: fixed;
     display: block;
     transition: 2s;
-    
+
     //opacity: 1;
     margin-top: -10px;
     margin-top: -90px;
@@ -101,43 +97,36 @@
     margin: 0 auto;
 }
 
-.corporation {
+:global(.corporation) {
     display: flex;
-  
+
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-  
-    
-  
+
     align-items: center;
     vertical-align: center;
     margin: 0px auto;
     padding-top: 10px;
-  
+
     //z-index: 1;
-    
-  
+
     margin-top: -500px;
     transition: 2s;
     //transition-delay: 2s;
     opacity: 1;
-  
+
     //height: 10vh;
-    
-    
-  }
-  
-  .corporation2 {
+}
+
+:global(.corporation2) {
     opacity: 1;
     //transition-delay: 2s;
     transition: 1.5s;
     margin-top: 30px;
     display: flex;
+}
 
-    
-  }
-
-.subtitle {
+:global(.subtitle) {
     font-size: 2.1rem;
 }

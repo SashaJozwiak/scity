@@ -10,17 +10,19 @@ const Burger = ({ burgerActive, setBurgerActive }) => {
     setBurgerActive(!burgerActive);
   };
 
-  // useEffect(() => {
-  //   if (!burgerActive) {
-  //     document.querySelector(".transparent").classList.add("transparent2");
-  //     document.querySelector(".corporation").classList.add(".corporation2");
-  //     document.querySelector(".logofontgo").classList.add("logofontgo2");
-  //     document.querySelector(".clickArea").classList.add("clickArea2");
-  //   }
-  // }, [burgerActive]);
-  // window.addEventListener('resize', () => {
-  //   if (window.innerWidth > 768) setBurgerActive(false);
-  // });
+  useEffect(() => {
+    if (burgerActive) {
+      document.querySelector(".transparent").classList.add("transparent2");
+      document.querySelector(".corporation").classList.add(".corporation2");
+      // document.querySelector(".logofontgo").classList.add("logofontgo2");
+      document.querySelector(".clickArea").classList.add("clickArea2");
+    } else if (!burgerActive) {
+      document.querySelector(".transparent").classList.remove("transparent2");
+      document.querySelector(".corporation").classList.remove(".corporation2");
+      // document.querySelector(".logofontgo").classList.remove("logofontgo2");
+      document.querySelector(".clickArea").classList.remove("clickArea2");
+    }
+  }, [burgerActive]);
 
   return (
     <div className={cl.container}>
