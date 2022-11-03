@@ -44,10 +44,21 @@ const Main = () => {
               <h1 className={cl.transparent}>
                 Реализуем самые сложные проекты  и нестандартные решения
               </h1>
+
             </div>
           </div>
         </div>
+
+        <div className="arrow8">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
       </div>
+
+
+
 
 
       <div id="1" className="company-activity">

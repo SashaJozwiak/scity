@@ -29,11 +29,13 @@ const Burger = ({ burgerActive, setBurgerActive }) => {
 
       {
         !burgerActive &&
-        <img
+        <a href="#">
+          <img
           className="logofontgo"
           src={logo}
           alt={"logo"}
         />
+        </a>
       }
 
       <div className="clickArea" onClick={burgerOnClick}>

@@ -141,6 +141,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url(../../../assets/background/activity.jpg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
 }
 
 //Проекты (карта)
@@ -154,3 +157,47 @@
 :global(.partners) {
     margin-top: 1300px;
 }
+
+// SCROLL
+
+:global(.arrow8) {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin: 20px auto 200px auto;
+    margin: auto 0 auto 50.5% ;
+    margin-top: 30vh;
+    
+  }
+  :global(.arrow8:before),
+  :global(.arrow8:after) {
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-left: 5px solid rgb(90, 115, 137);
+    border-bottom: 5px solid rgb(90, 115, 137);
+    animation: arrow8 3s linear infinite;
+    box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.3); 
+  }
+  :global(.arrow8:after) {
+    animation: arrow8 3s linear infinite -1.5s;
+  }
+  @keyframes arrow8 {
+    0% {
+        opacity: 0;
+        transform: translate(0, -53px) rotate(-45deg);
+    }
+    10%, 90% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;  
+        transform: translate(0, 0) rotate(-45deg);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(0, 53px) rotate(-45deg);
+    }
+  }

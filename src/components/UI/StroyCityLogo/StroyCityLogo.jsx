@@ -5,7 +5,8 @@ import cl from "./StroyCityLogo.module.scss";
 
 const StroyCityLogo = () => {
   return (
-    <div className={cl.logos} >
+    <div  className={cl.logos} >
+      <a href="../">
       <img
         className={cl.logofont}
         src={logo}
@@ -16,6 +17,7 @@ const StroyCityLogo = () => {
         src={logo2}
         alt={"logo"}
       />
+      </a>
     </div>
   );
 };
