@@ -47,11 +47,20 @@ const Main = () => {
         </div>
       </div>
 
-      <div id="1" className="company-activity">
+      {/* <div id="1" className="company-activity">
         <CorporationAbout />
         <CorporationHistory />
         <CorporationAchivements />
-      </div>
+      </div> */}
+      <Carousel
+        id={'1'}
+        firstCadr={<CorporationAbout />}
+        secondCadr={<CorporationHistory />}
+        thirdCadr={<CorporationAchivements />}
+        firstCadrName={'О Нас'}
+        secondCadrName={'История'}
+        thirdCadrName={'Достижения'}
+      />
 
       <Carousel
         id={'2'}
