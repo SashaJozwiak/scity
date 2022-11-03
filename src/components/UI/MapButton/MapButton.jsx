@@ -2,7 +2,6 @@ import React from "react";
 import cl from './MapButton.module.scss'
 
 const MapButton = ({ style, city, top, left, content, setActive, setContent }) => {
-  console.log(style)
   return (
     <button
       onClick={(e) => {

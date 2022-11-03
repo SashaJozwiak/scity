@@ -3,90 +3,65 @@
 }
 
 :global(.scene) {
-    //width: 1000px;
-    top: 45%;
-
-    display: flex;
-    justify-content: center;
-    
-    flex-direction: row;
-    flex-wrap: wrap;
-    perspective: 800px;
-    
-  
-    :global(.card) {
-      position: relative;
-      top: 15vh;
-      width: 240px;
-      height: 300px;
-      margin: 20px;
-      
-
-
-
-      color: rgb(90, 115, 137);
-      cursor: pointer;
-
+  //width: 1000px;
+  top: 45%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  perspective: 800px;
+  :global(.card) {
+    position: relative;
+    top: 15vh;
+    width: 240px;
+    height: 300px;
+    margin: 20px;
+    color: rgb(90, 115, 137);
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    transform-style: preserve-3d;
+    &:hover {
+      transform: rotateY(0.5turn);
+    }
+    :global(.logo) {
+      width: 100%;
+      border-radius: 10px;
+      opacity: 0.9;
+    }
+    :global(.titletext) {
+      font-family: "Russo One", sans-serif;
+      font-size: large;
+      text-transform: uppercase;
+      padding-bottom: 10px;
+    }
+    :global(.backtext) {
+      font-family: "Russo One", sans-serif;
+      text-align: center;
+      vertical-align: middle;
+      top: 45vh;
+      margin: 0 auto;
+      padding: 15% 5%;
+    }
+    :global(.card__face) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
       transition: 1s ease-in-out;
-      transform-style: preserve-3d;
-
-  
-      &:hover {
+      -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
+      img {
+        width: 240px;
+        height: 300px;
+        object-fit: cover;
+      }
+      :global(&--back) {
         transform: rotateY(0.5turn);
-      }
-
-      :global(.logo)   {
-        width: 100%;
-
+        background-color: rgba(255, 255, 255, 0.733);
+        background-color: rgb(255, 255, 255);
         border-radius: 10px;
-        opacity: 0.9;
-      }
-
-      :global(.titletext) {
-        font-family: "Russo One", sans-serif;
-        font-size: large;
-        text-transform: uppercase;
-        padding-bottom: 10px;
-      }
-
-      :global(.backtext) {
-        font-family: "Russo One", sans-serif;
-        text-align: center;
-        vertical-align: middle;
-        top: 45vh;
-        margin: 0 auto;
-        padding: 15% 5%;
-        
-      }
-  
-      :global(.card__face) {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-
-        
-        
-        backface-visibility: hidden;
-        transition: 1s ease-in-out;
-        -webkit-box-reflect: below 0
-          linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
-  
-        img {
-          width: 240px;
-          height: 300px;
-          object-fit: cover;
-        }
-  
-        :global(&--back) {
-          transform: rotateY(0.5turn);
-          background-color: rgba(255, 255, 255, 0.733);
-          background-color: rgb(255, 255, 255);
-          border-radius: 10px;
-
-
-        }
       }
     }
   }
+}
