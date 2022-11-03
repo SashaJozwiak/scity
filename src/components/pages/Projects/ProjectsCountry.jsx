@@ -6,6 +6,7 @@ import Map from "../../Map/Map.jsx";
 const ProjectsCountry = ({ mapSrc, MapMarkers }) => {
   const [modalWindowActive, setModalWindowActive] = useState(false);
   const [content, setContent] = useState(null);
+  
   return (
     <div className="wrapper">
       <Map mapSrc={mapSrc}>

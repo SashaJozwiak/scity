@@ -12,23 +12,25 @@ import '../pages/pages_scss/partners.scss'
 const Partners = () => {
   return (
     <div className="wrapper">
-      <div className="background">
+      {/* <div className="background">
         <div className="transparent">стройсити  <br /> <p className="subtitle">несущие системы</p></div>
-    </div>
+      </div> */}
     
-      <div className="scene">
-      <div className="card">
-    <div className="card__face card__face--front">
-      <img className="logo" src={Stis}/* "https://i.loli.net/2019/11/23/cnKl1Ykd5rZCVwm.jpg" */ />
-    </div>
-    <div className="card__face card__face--back">
-      {/* <img src="https://i.loli.net/2019/11/16/cqyJiYlRwnTeHmj.jpg" /> */}
-      <div className="backtext">
-        <h1 className="titletext">ООО «Группа компаний «Стис»»</h1>
-        <p>Партнер является признанным лидером в сфере производства стеклопакетов в России и странах СНГ. Компания поставляет свою продукцию в 43 страны мира и 30 регионов России. На территории России работает 10 заводов.</p>
-      </div>
-    </div>
-  </div>
+        <div className="scene">
+          <div className="card">
+              <div className="card__face card__face--front">
+                <img className="logo" src={Stis}/* "https://i.loli.net/2019/11/23/cnKl1Ykd5rZCVwm.jpg" */ />
+              </div>
+              <div className="card__face card__faceback">
+                {/* <img src="https://i.loli.net/2019/11/16/cqyJiYlRwnTeHmj.jpg" /> */}
+                <div className="backtext">
+                  <h1 className="titletext">ООО «Группа компаний «Стис»»</h1>
+                  <p>Партнер является признанным лидером в сфере производства стеклопакетов в России и странах СНГ. Компания поставляет свою продукцию в 43 страны мира и 30 регионов России. На территории России работает 10 заводов.</p>
+                </div>
+          </div>
+        </div>
+
+
   <div className="card">
     <div className="card__face card__face--front">
       <img className="logo" src={Lukoil} /* "https://i.loli.net/2019/11/16/FLnzi5Kq4tkRZSm.jpg" */ />

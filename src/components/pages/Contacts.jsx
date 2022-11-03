@@ -8,7 +8,7 @@ import FeedbackForm from "../FeedbackForm/FeedbackForm.jsx";
 const Contacts = () => {
   return (
     <div className={cl.mapwrapper}>
-      <div className={cl.contacts} >
+      <div id="4" className={cl.contacts} >
         <div className={cl.contactsblock}>
           <h1 className={cl.title}>Контакты</h1>
           {/* <p className={cl.text}>ООО «СТРОЙСИТИ»</p> */}
@@ -34,7 +34,7 @@ const Contacts = () => {
         <Map
 
           width={'100vw'}
-          height={'calc(100vh + 50px)'}
+          height={'calc(70vh + 50px)'}
           defaultState={{ center: [55.773256, 37.498564], zoom: 13 }} >
 
           <Placemark

@@ -1,19 +1,39 @@
 import React from "react";
 import StroyCityLogo from "../../components/UI/StroyCityLogo/StroyCityLogo.jsx"
 import Corporation from "./Corporation/Corporation.jsx";
-/* import CorporationMain from "./Corporation/pages/CorporationMain.jsx";
-import CorporationNavbar from "./Corporation/CorporationNavbar.jsx";
-import CorporationRouter from "./Corporation/CorporationRouter.jsx"; */
+
+
+import CorporationAbout from "./Corporation/pages/CorporationAbout.jsx";
+import CorporationHistory from "./Corporation/pages/CorporationHistory.jsx";
+import CorporationAchivements from "./Corporation/pages/CorporationAchivements.jsx";
+
 import Projects from "./Projects/Projects.jsx";
+import ProjectsCountry from "./Projects/ProjectsCountry.jsx";
+import Map from "../Map/Map.jsx";
+import MapButton from "../UI/MapButton/MapButton.jsx";
+import ModalWindow from "../ModalWindow/ModalWindow.jsx";
+
 import Partners from "./Partners.jsx";
 import Contacts from "./Contacts.jsx";
+
+import Footer from "./footer.jsx";
+
+
+
+
+
+
 import "./pages_scss/main.scss"
 import cl from "./main.module.scss";
+
+
+
 
 
 const Main = () => {
   return (
     <div className="wrapper">
+
       <div className="main-wrapper">
         <div className="background">
           <div className="transparent">стройсити  <br /> <p className="subtitle">несущие системы</p></div>
@@ -29,24 +49,35 @@ const Main = () => {
         </div>
       </div>
 
-      {/* <div>
-        <Corporation />
+
+      <div id="1" className="company-activity">
+        <CorporationAbout/>
+        <CorporationHistory/>
+        <CorporationAchivements/>
       </div>
 
-      <div>
-        <Projects />
+      <div id="2" className="projects">
+         <Projects/>
       </div>
 
-      <div>
+
+      <div id="3" className="partners">
         <Partners />
       </div>
 
+
+
       <div>
         <Contacts />
-      </div> */}
+      </div>
+
+      <div>
+        <Footer/>
+      </div>
 
     </div>
   );
 };
+
 
 export default Main;

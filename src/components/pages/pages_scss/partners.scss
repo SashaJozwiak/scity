@@ -1,7 +1,8 @@
-.wrapper {
+:global(.wrapper) {
   height: 90vh;
 }
-.scene {
+
+:global(.scene) {
     //width: 1000px;
     top: 45%;
 
@@ -11,13 +12,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     perspective: 800px;
-
-
-
-
     
   
-    .card {
+    :global(.card) {
       position: relative;
       top: 15vh;
       width: 240px;
@@ -38,21 +35,21 @@
         transform: rotateY(0.5turn);
       }
 
-      .logo   {
+      :global(.logo)   {
         width: 100%;
 
         border-radius: 10px;
         opacity: 0.9;
       }
 
-      .titletext {
+      :global(.titletext) {
         font-family: "Russo One", sans-serif;
         font-size: large;
         text-transform: uppercase;
         padding-bottom: 10px;
       }
 
-      .backtext {
+      :global(.backtext) {
         font-family: "Russo One", sans-serif;
         text-align: center;
         vertical-align: middle;
@@ -62,7 +59,7 @@
         
       }
   
-      .card__face {
+      :global(.card__face) {
         position: absolute;
         top: 0;
         left: 0;
@@ -82,7 +79,7 @@
           object-fit: cover;
         }
   
-        &--back {
+        :global(&--back) {
           transform: rotateY(0.5turn);
           background-color: rgba(255, 255, 255, 0.733);
           background-color: rgb(255, 255, 255);

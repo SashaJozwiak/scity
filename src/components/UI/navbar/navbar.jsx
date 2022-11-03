@@ -13,28 +13,29 @@ const Navbar = ({ burgerActive, setBurgerActive }) => {
 
   return (
     <nav className={burgerActive ? `${cl.navbar} ${cl.navbar_active}` : `${cl.navbar}`}>
-      <a className={`${cl.navbar__link} ${cl.navbar__link_active}`}>
+      
+      <a href="#1" className={`${cl.navbar__link} ${cl.navbar__link_active}`}>
         <p className={cl.link__text}>
           {corporationIcon}
-          Деятельность
+          <span className={cl.textmenu}>Деятельность</span>
         </p>
       </a>
 
-      <a className={cl.navbar__link}>
+      <a href="#2" className={cl.navbar__link}>
         <p className={cl.link__text}>
           {projectsIcon}
           Проекты
         </p>
       </a>
 
-      <a className={cl.navbar__link}>
+      <a href="#3" className={cl.navbar__link}>
         <p className={cl.link__text}>
           {partnersIcon}
           Партнеры
         </p>
       </a>
 
-      <a className={cl.navbar__link}>
+      <a href="#4" className={cl.navbar__link}>
         <p className={cl.link__text}>
           {contactsIcon}
           Контакты
