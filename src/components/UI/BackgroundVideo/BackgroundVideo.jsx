@@ -5,6 +5,7 @@ import poster from "./poster.jpg";
 
 const BackgroundVideo = () => {
   return (
+    <div className={cl.videowrapper}>
     <video
       className={cl.backgroundVideo}
       autoPlay={true}
@@ -14,6 +15,7 @@ const BackgroundVideo = () => {
     >
       <source src={bvideo} />
     </video>
+    </div>
   );
 };
 

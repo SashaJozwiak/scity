@@ -10,6 +10,7 @@ const CorporationNavbar = () => {
   };
   return (
     <div className={cl.corporation__navbar}>
+      
       <NavLink to="designing" className={({ isActive }) => isActiveCheck(isActive)}>
         <p className={cl.link__text}>
 

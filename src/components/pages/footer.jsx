@@ -1,9 +1,9 @@
 import React from "react";
-import "../pages/footer.scss"
+import cl from "../pages/footer.scss"
 
  const Footer = () => {
     return (
-        <footer className="footerwrapper">
+        <footer className={cl.footerwrapper}>
             Москва, ООО "Стройсити" © 2022
 
         </footer>

@@ -1,4 +1,4 @@
-.content-title {
+:global(.content-title) {
   //padding-top: 5px;
   
   font-family: 'Russo One', sans-serif;
@@ -7,13 +7,13 @@
   text-align: center;
 }
 
-.project {
+:global(.project) {
   display: flex;
   flex-direction: column;
   padding: 20px;
 }
 
-.content-text {
+:global(.content-text) {
   
   font-family: "Arial", sans-serif;
   color:#294284 ;
@@ -23,7 +23,7 @@
   
 }
 
-.project-photo {
+:global(.project-photo) {
   margin: 0 auto;
   padding: 10px;
 }

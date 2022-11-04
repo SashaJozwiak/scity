@@ -16,11 +16,18 @@ const Burger = ({ burgerActive, setBurgerActive }) => {
       document.querySelector(".corporation").classList.add("corporation2");
       //document.querySelector(".logofontgo").classList.add("logofontgo2");
       document.querySelector(".clickArea").classList.add("clickArea2");
+      document.querySelector(".wrapper").classList.add("wrapper2");
+      //document.body.classList.add("scroll");
+      //document.querySelector("body").classList.remove("scroll");
     } else if (!burgerActive) {
       document.querySelector(".transparent").classList.remove("transparent2");
       document.querySelector(".corporation").classList.remove("corporation2");
       //document.querySelector(".logofontgo").classList.remove("logofontgo2");
       document.querySelector(".clickArea").classList.remove("clickArea2");
+      document.querySelector(".wrapper").classList.remove("wrapper2");
+      //document.body.classList.remove("scroll");
+      //document.querySelector("body").classList.remove("scroll");
+      //document.querySelector("html")
     }
   }, [burgerActive]);
 

@@ -8,7 +8,7 @@ const ProjectsCountry = ({ mapSrc, MapMarkers }) => {
   const [content, setContent] = useState(null);
   
   return (
-    <div className="wrapper">
+    <div className="mapswrapper">
       <Map mapSrc={mapSrc}>
         {
           MapMarkers.map((button) => {

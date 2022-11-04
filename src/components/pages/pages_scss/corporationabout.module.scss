@@ -17,24 +17,30 @@
     font-family: 'Avenir';
     //font-family: 'Russo One', sans-serif;
     display: flex;
-    flex-direction: column;
+    //flex-direction: column;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    gap:30px;
     //width: 70rem;
     //height: 30rem;
-    background-color: rgba(255, 255, 255, 0.884);
-    background-color: white;
+
+    background-color: transparent;
     border-radius: 10px;
     padding: 10px 25px 150px 25px;
     z-index: 0;
     margin-top: 50px;
-    width: 1000px;
+    //width: 1000px;
+    margin: 0 auto;
 
-    box-shadow: 7px 7px 5px rgba(0,0,0,0.6); 
+    //box-shadow: 7px 7px 5px rgba(0,0,0,0.6); 
 
     opacity:0; /*Элемент полностью прозрачный (невидимый)*/
     transition: 0.2s; /*Скорость перехода состояния элемента*/
     animation: show 0.5s 1; /* Указываем название анимации, её время и количество повторов*/
     animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
     animation-delay: 0.1s; /* Задержка перед началом */
+
+    //background-color: rgba(216, 216, 216, 0.212);
 
 }
 
@@ -56,6 +62,8 @@ opacity:1;
     flex-direction: column;
     margin: 0 10px 0 10px;
     opacity: 1;
+
+    width: 30%;
 
 
 }
@@ -215,7 +223,7 @@ ul {
     &:hover {
         opacity: 1;
         transition: 0.7s;
-        scale: 1.1;
+        scale: 1.02;
         z-index: 2;
         box-shadow: 7px 7px 5px rgb(0 0 0 / 60%);
     }

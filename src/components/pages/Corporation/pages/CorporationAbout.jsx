@@ -38,20 +38,29 @@ const CorporationAbout = () => {
               <li>Статические и теплотехнические расчеты по выбранной форме.</li>
             </ul>
 
-            <img className={cl.imgtwo} src={pic2} alt="editing project two" />
+            {/* <img className={cl.imgtwo} src={pic2} alt="editing project two" /> */}
           </div>
 
-          <img className={cl.imgfour} src={pic4} alt="editing project four" />
-          <img className={cl.imgthree} src={pic3} alt="editing project three" />
+          <div className={cl.listimgtwo}>
+
+            {/* <img className={cl.imgpartthree} src={pic5} alt="editing project five" /> */}
+            <img className={cl.imgpartthree} src={pic4} alt="editing project six" />
+            {/* <img className={cl.imgpartthree} src={pic7} alt="editing project seven" /> */}
+            <img className={cl.imgpartthree} src={pic3} alt="editing project eight" />
+
+          </div>
+
+          {/* <img className={cl.imgfour} src={pic4} alt="editing project four" /> */}
+          {/* <img className={cl.imgthree} src={pic3} alt="editing project three" /> */}
       </div>
 
       <div className={cl.project_one}>
         <h1 className={cl.title}>Автоматизированная интеграция модели в программный комплекс для станков с ЧПУ</h1>
           <div className={cl.listimgtwo}>
 
-            <img className={cl.imgpartthree} src={pic5} alt="editing project five" />
+            {/* <img className={cl.imgpartthree} src={pic5} alt="editing project five" /> */}
             <img className={cl.imgpartthree} src={pic6} alt="editing project six" />
-            <img className={cl.imgpartthree} src={pic7} alt="editing project seven" />
+            {/* <img className={cl.imgpartthree} src={pic7} alt="editing project seven" /> */}
             <img className={cl.imgpartthree} src={pic8} alt="editing project eight" />
 
           </div>

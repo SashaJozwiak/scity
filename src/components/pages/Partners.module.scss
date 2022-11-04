@@ -1,6 +1,4 @@
-.wrapper {
-  height: 90vh;
-}
+
 
 .scene {
   //width: 1000px;
@@ -15,7 +13,7 @@
 
   .card {
     position: relative;
-    top: 15vh;
+    top: 5vh;
     width: 240px;
     height: 300px;
     margin: 20px;
@@ -32,6 +30,7 @@
 
     .logo {
       border-radius: 10px;
+      box-shadow: 7px 7px 5px rgb(0 0 0 / 60%);
     }
 
     .titletext {
@@ -59,7 +58,7 @@
 
       backface-visibility: hidden;
       transition: 1s ease-in-out;
-      -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
+      //-webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
 
       img {
         width: 240px;
@@ -71,6 +70,7 @@
         transform: rotateY(0.5turn);
         background-color: rgba(255, 255, 255, 0.733);
         border-radius: 10px;
+        box-shadow: 7px 7px 5px rgb(0 0 0 / 60%);
       }
     }
   }

@@ -1,34 +1,100 @@
 $cadr-width: 100vw;
-$card-height: 800px;
+$card-height: 100vh;
+
 
 .container {
-  margin-top: 20px;
+  padding-top: 50px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap:20px;
+
+/*   background-image: url(../../assets/background/activity.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; */
+
+  //background-color: rgba(216, 216, 216, 0.212);
+
+
+
   .nav {
-    width: 320px;
+    display: flex;
+    width: 620px;
     height: 50px;
+    z-index: 2;
     .button {
       z-index: 100;
       background: white;
-      border: 2px solid black;
+      //border: 2px solid black;
       width: 80px;
       margin: 0 10px;
       transition: 1s;
+
+      font-size: 1.5rem;
+    color: black;
+    cursor: pointer;
+
+    background-color: rgba(255, 255, 255, 0.685);
+    color: black;
+    font-size: 1.5rem;
+    display: block;
+    width: 200px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    margin: 0 10px 0 10px;
+    transform: skewX(-30deg);
+    transition: 0.3s;
+    //border-bottom: #294284 dotted 2px;
+    //border-top: #294284 dotted 2px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 5px rgba(0,0,0,0.6); 
+    transition-duration: 0.5s;
+
+
+
       &_active {
-        background: darkgray;
+        background: rgb(90, 115, 137);
+        color: white;
       }
       &:hover {
-        background: gray;
+        background: rgb(90, 115, 137);
+        color: white;
+      }
+
+      &:hover .icons {
+        fill: white;
+        transition-duration: 0.5s;
+      }
+      &_active .icons {
+        fill: white;
+        transition-duration: 0.5s;
       }
     }
   }
+
+  .icons {
+    display: inline;
+    margin: 10px 10px -2px 0;
+    width: 19px;
+    height: 19px;
+    transition-duration: 0.5s;
+  }
+
+  .link__text {
+    font-family: "Avenir";
+    font-family: 'Russo One', sans-serif;
+    font-size: medium;
+    transform: skewX(30deg);
+    line-height: normal;
+  }
+
   .carousel {
     position: relative;
     width: $cadr-width;
     height: $card-height;
+    
     overflow: hidden;
     .first,
     .second,
@@ -39,9 +105,137 @@ $card-height: 800px;
       top: 0;
       left: -200%;
       transition: 1s;
+
+
+
+
       &_active {
         left: 0;
       }
     }
   }
+}
+
+//oldstyles
+
+.corporation {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  background-color: #f3f5fc;
+
+  
+
+  align-items: center;
+  vertical-align: center;
+  margin: -5px auto;
+  padding-top: 10px;
+  padding-bottom: 400px;
+
+  z-index: 5001;
+  
+
+  //height: 10vh;
+  
+  &__navbar {
+    display: flex;
+    //position: fixed;
+    top: 5px;
+    //margin: 10px;
+    //height: 10vh;
+    z-index: 5001;
+
+  }
+  .corp {
+    font-size: 1.5rem;
+    color: black;
+    cursor: pointer;
+
+    background-color: rgba(255, 255, 255, 0.685);
+    color: black;
+    font-size: 1.5rem;
+    display: block;
+    width: 200px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    margin: 0 10px 0 10px;
+    transform: skewX(-30deg);
+    transition: 0.3s;
+    //border-bottom: #294284 dotted 2px;
+    //border-top: #294284 dotted 2px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 5px rgba(0,0,0,0.6); 
+    transition-duration: 0.5s;
+
+    &_active {
+      background: rgba(90, 115, 137, 0.938);
+      color: white;
+      box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.6);
+      transition-duration: 0.5s;
+    }
+
+    &_active .icons {
+      fill: white;
+      transition-duration: 0.5s;
+    }
+
+    &_active .link__text {
+      fill: white;
+      transition-duration: 0.5s;
+    }
+
+    &:hover .link__text {
+      fill: white;
+      transition-duration: 0.5s;
+    }
+
+
+    .link__text {
+      font-family: "Avenir";
+      font-family: 'Russo One', sans-serif;
+      font-size: medium;
+      transform: skewX(30deg);
+
+
+  
+    }
+
+    &:hover {
+      //transform: skewX(-30deg) scale(1.1);
+      background: rgba(90, 115, 137, 0.938);
+      color: white;
+    }
+
+    &:hover .icons {
+      fill: white;
+      transition-duration: 0.5s;
+    }
+
+  }
+}
+
+.icons {
+  display: inline;
+  margin: 10px 10px -2px 0;
+  width: 19px;
+  height: 19px;
+  transition-duration: 0.5s;
+}
+
+/* .icons:hover {
+  fill: white;
+} */
+
+.title {
+  display: block;
+  text-align: center;
+  background: rgba(206, 210, 221, 0.781) top center;  
+  padding: 10px 10px;
+  margin: 200px auto;
+  width: 50%;
+  height: 90px;
+  border-radius: 10px;
 }
