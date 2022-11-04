@@ -14,7 +14,7 @@ const Navbar = ({ burgerActive, setBurgerActive }) => {
   return (
     <nav className={burgerActive ? `${cl.navbar} ${cl.navbar_active}` : `${cl.navbar}`}>
       
-      <a href="#1" className={`${cl.navbar__link} ${cl.navbar__link_active}`}>
+      <a href="#1" className={`${cl.navbar__link} `}> {/* ${cl.navbar__link_active} */}
         <p className={cl.link__text}>
           {corporationIcon}
           <span className={cl.textmenu}>Деятельность</span>
