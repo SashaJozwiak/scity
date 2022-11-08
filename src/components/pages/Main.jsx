@@ -66,6 +66,7 @@ const Main = () => {
         </h1>
 
       <Carousel
+      
         id={'200'}
         firstCadr={<ProjectsCountry mapSrc={mapRF} MapMarkers={MapMarkersRF} />}
         secondCadr={<ProjectsCountry mapSrc={mapRB} MapMarkers={MapMarkersRB} />}
