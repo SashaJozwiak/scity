@@ -1,0 +1,223 @@
+::-webkit-scrollbar {
+    width: 0;
+  }
+
+
+  @font-face {
+    font-family: 'azoft-sans';
+    src: local('azoft-sans'),
+         //url('../../../assets/fonts/Avenir-LightOblique.woff2') format('woff2'), 
+         //url('../../../assets/fonts/Avenir-LightOblique.woff') format('woff'),
+         url('../../../assets/fonts/Avenir-LightOblique.ttf') format('ttf'),
+         //url('../../../assets/fonts/Avenir-LightOblique.eot') format('eot');
+  }
+
+
+.corporationabout {
+    font-family: 'Avenir';
+    //font-family: 'Russo One', sans-serif;
+    display: flex;
+    flex-direction: column;
+    //width: 70rem;
+    //height: 30rem;
+    background-color: rgba(255, 255, 255, 0.884);
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 25px 150px 25px;
+    z-index: 0;
+    margin-top: 50px;
+    width: 1000px;
+
+    box-shadow: 7px 7px 5px rgba(0,0,0,0.6); 
+
+    opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+    transition: 0.2s; /*Скорость перехода состояния элемента*/
+    animation: show 0.5s 1; /* Указываем название анимации, её время и количество повторов*/
+    animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+    animation-delay: 0.1s; /* Задержка перед началом */
+
+}
+
+
+@keyframes show{
+0%{
+opacity:0;
+
+margin: 500px;
+}
+100% {
+opacity:1;
+//margin-top: 50px;
+}
+}
+
+.project_one {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px 0 10px;
+    opacity: 1;
+
+
+}
+
+
+
+
+.transparent {
+    font-family: 'Marmelad';
+    font-family: 'Russo One', sans-serif;
+    //font-family: sans-serif;
+    //font-family: 'Marmelad', sans-serif;
+    //font-weight: bold;
+    font-size: 33px;
+    line-height: 50px;
+    text-transform: uppercase;
+    background: rgba(0, 0, 0, 0);
+    color: rgb(247, 244, 244);
+    mix-blend-mode: multiply;
+    padding: 10px 20px;
+    display: inline-block;
+    text-shadow: 0 0 8px rgba(0,0,0,5), 0 2px 4px rgba(0,0,0,0.7);
+    text-align: center;
+    user-select: none;
+}
+
+.transparent2{
+    display: block;
+    padding-bottom: 40px;
+    letter-spacing: 3px;
+    font-size: 50px;
+
+}
+
+.title {
+    font-family: 'Russo One', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(90, 115, 137);
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+ul {
+    font-family: 'Marmelad';
+    font-size: 18px;
+    padding: 5px;
+    padding-left: 30px;
+}
+
+.ul12 {
+    padding-top: 10px;
+}
+
+.imgone {
+    display: block;
+    border-radius: 10px;
+    margin: 20px 0;
+    opacity: 0.7;
+    transition: 0.7s;
+    box-shadow: 3px 3px 2px rgb(0 0 0 / 60%);
+    &:hover {
+        opacity: 1;
+        transition: 1s;
+        scale: 1.02;
+        box-shadow: 7px 7px 5px rgb(0 0 0 / 60%);
+
+    }
+
+}
+
+
+.imgtwo {
+        //display: block;
+        //padding: 20px 0;
+        border-radius: 10px;
+        opacity: .7;
+        width: 420px;
+        transition: 0.7s;
+        box-shadow: 3px 3px 2px rgb(0 0 0 / 60%);
+        &:hover {
+            opacity: 1;
+            transition: 0.7s;
+            scale: 1.05;
+            z-index: 3;
+            box-shadow: 7px 7px 5px rgb(0 0 0 / 60%);
+        }
+}
+
+.imgfour {
+    opacity: .7;
+    border-radius: 10px;
+    width: 490px;
+    margin-top: -100px;
+    transition: 0.7s;
+    box-shadow: 3px 3px 2px rgb(0 0 0 / 60%);
+    &:hover {
+        opacity: 1;
+        transition: 0.7s;
+        scale: 1.05;
+        z-index: 3;
+        box-shadow: 7px 7px 5px rgb(0 0 0 / 60%);
+    }
+
+}
+
+.imgthree {
+    width: 420px;
+    margin-top: -202px;
+    margin-left: 505px;
+    opacity: .7;
+    border-radius: 10px;
+    transition: 0.7s;
+    box-shadow: 3px 3px 2px rgb(0 0 0 / 60%);
+    &:hover {
+        opacity: 1;
+        transition: 0.7s;
+        scale: 1.05;
+        z-index: 3;
+        box-shadow: 7px 7px 5px rgb(0 0 0 / 60%);
+    }
+}
+
+
+
+.listimg {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.listimgtwo {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    //opacity: .7;
+    transition: 1s;
+/*     &:hover {
+        opacity: 1;
+        transition: 1s;
+    } */
+}
+
+.imgpartthree{
+    width: 460px;
+    height: 320px;
+    border-radius: 10px;
+    transition: 0.7s;
+    opacity: .6;
+    box-shadow: 3px 3px 2px rgb(0 0 0 / 60%);
+    
+    &:hover {
+        opacity: 1;
+        transition: 0.7s;
+        scale: 1.1;
+        z-index: 2;
+        box-shadow: 7px 7px 5px rgb(0 0 0 / 60%);
+    }
+}
+

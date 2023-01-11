@@ -1,0 +1,138 @@
+@font-face {
+  font-family: "Avenir";
+  src: local("Avenir"), url("../../../assets/fonts/Avenir-LightOblique.woff2") format("woff2"),
+    url("../../../assets/fonts/Avenir-LightOblique.woff") format("woff");
+  //url('/fonts/font.ttf') format('ttf'),
+  //url('/fonts/font.eot') format('eot');
+}
+
+.icons {
+  display: inline;
+  margin: 10px 10px -2px 0;
+  width: 19px;
+  height: 19px;
+  transition: 0.5s;
+}
+
+.navbar {
+  @media (max-width: 768px) {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    bottom: -300px;
+    transition: 0.3s;
+    &_active {
+      bottom: 50px;
+    }
+  }
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  color: #f1f1f1;
+  //padding: 5px;
+  padding: 0px 5px 10px 5px;
+  width: calc(80vw - 200px);
+
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8)),
+    linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  -webkit-mask-size: 100% 91%, 100% 10%;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: bottom, top;
+
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8)),
+    linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  mask-size: 100% 91%, 100% 10%;
+  mask-repeat: no-repeat;
+  mask-position: bottom, top;
+
+  .navbar__link {
+    // #b0b0d3;
+    background-color: rgba(255, 255, 255, 0.685);
+    color: black;
+    font-size: 1.5rem;
+    display: block;
+    width: 200px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    margin: 10px;
+    transform: skewX(-30deg);
+    transition: 0.3s;
+    //border-bottom: #294284 dotted 2px;
+    //border-top: #294284 dotted 2px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.6);
+    transition-duration: 0.5s;
+
+    &_active {
+      background: #294284;
+      color: white;
+      box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.6);
+      transition-duration: 0.5s;
+    }
+
+    &_active .icons {
+      fill: white;
+    }
+
+    .link__text {
+      font-family: "Avenir";
+      font-family: "Russo One", sans-serif;
+      transform: skewX(30deg);
+    }
+
+    &:hover {
+      //transform: skewX(-30deg) scale(1.1);
+      background: #294284;
+      color: white;
+      transition: 0.5s;
+    }
+
+    &:hover .icons {
+      //transform: skewX(-30deg) scale(1.1);
+      transition: 0.5s;
+      fill: white;
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  .link__text {
+    /*     display: flex;
+    flex-direction: column; */
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .link__text {
+    /*     display: flex;
+    flex-direction: column; */
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .link__text {
+    /*     display: flex;
+    flex-direction: column; */
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 970px) {
+  .link__text {
+    /*     display: flex;
+    flex-direction: column; */
+    font-size: 0.65rem;
+  }
+}
+
+//in process
+@media (max-width: 768px) {
+  .link__text {
+    content: " ";
+  }
+}

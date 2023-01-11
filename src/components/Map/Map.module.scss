@@ -1,0 +1,144 @@
+.MapContainer {
+  position: relative;
+  width: 75%;
+  //height: 100%;
+  margin: 0 auto;
+  top: -60px;
+  vertical-align: auto;
+  //vertical-align: middle;
+
+  opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+  transition: 0.5s; /*Скорость перехода состояния элемента*/
+  animation: show 0.5s 1; /* Указываем название анимации, её время и количество повторов*/
+  animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+  animation-delay: 0.1s; /* Задержка перед началом */
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes show{
+  0%{
+  opacity:0;
+  width: 0%;
+  }
+  100% {
+  opacity:1;
+  width: 75%;
+  }
+  }
+
+.MapImage {
+  position: relative;
+  top: 20px;
+  //width: auto;
+  width: 100%;
+  //max-height: 100vh;
+  opacity: 0.9;
+  transition: 0.5s;
+  
+
+}
+
+.legend {
+  position: absolute;
+  top: 95%;
+  left: 10%;
+}
+
+.legendlist {
+  list-style-type: none;
+}
+
+.legendlists{
+  font-family: "Marmelad", sans-serif;
+  position: relative;
+  left: 10%;
+  background-color: rgba(240, 240, 240, 0.671);
+  border-radius: 10px;
+  padding: 3px;
+  user-select: none;
+  font-size: 69%;
+  //font-style: italic;
+}
+
+.legendbutton1 {
+  width: 20px;
+  height: 20px;
+  background: inherit;
+  background-color: rgb(41, 65, 132);
+  border: 6px solid rgba(255, 252, 252, 0.938);
+  border-radius: 50%;
+  position: absolute;
+  transition: 0.5s;
+  box-shadow: 7px 7px 5px rgb(0 0 0 / 30%);
+  
+  border-radius:50% 50% 0% 50%;
+  transform: rotate(45deg);
+  
+  &:hover {
+    transform: scale(1);
+    box-shadow: 7px 7px 5px rgb(0 0 0 / 60%);
+    transition: 0.5s;
+    transform: rotate(45deg);
+
+  }
+
+  &:hover .MapButtonCityName {
+    transition: 0.5s;
+    box-shadow: 7px 7px 5px rgb(0 0 0 / 60%);
+  }
+
+}
+
+.legendbutton2 {
+  width: 18px;
+  height: 18px;
+  background: inherit;
+  background-color: rgb(132, 41, 41);
+  border: 5px solid rgba(255, 252, 252, 0.938);
+  //border-radius: 50%;
+  position: absolute;
+  transition: 0.5s;
+  box-shadow: 7px 7px 5px rgb(0 0 0 / 30%);
+  
+
+  //border-radius:50% 50% 0% 50%;
+  transform: rotate(45deg);
+  
+  &:hover {
+    transform: scale(1);
+    box-shadow: 7px 7px 5px rgb(0 0 0 / 60%);
+    transition: 0.5s;
+    transform: rotate(45deg);
+
+  }
+
+  &:hover .MapButtonCityName {
+    transition: 0.5s;
+    box-shadow: 7px 7px 5px rgb(0 0 0 / 60%);
+  }
+
+}
+
+.legendlistone {
+  padding-top: 5%;
+}
+
+
+
+
+@media (max-width: 1350px) {
+  .MapContainer  {
+  //top: 100px;
+  overflow: visible;
+  }
+
+  
+}
+
+@media (max-width: 1024px) {
+  .MapContainer  {
+  top: 60px;
+  width: 120%;
+  }
+}

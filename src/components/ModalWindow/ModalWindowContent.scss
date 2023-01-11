@@ -1,0 +1,29 @@
+.content-title {
+  //padding-top: 5px;
+  
+  font-family: 'Russo One', sans-serif;
+
+  font-size: 2rem;
+  text-align: center;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.content-text {
+  
+  font-family: "Arial", sans-serif;
+  color:#294284 ;
+  text-align: center;
+  font-size: 1.5rem;
+  overflow: auto;
+  
+}
+
+.project-photo {
+  margin: 0 auto;
+  padding: 10px;
+}

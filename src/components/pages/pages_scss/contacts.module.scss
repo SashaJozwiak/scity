@@ -1,0 +1,191 @@
+.mapwrapper {
+  font-family: "Avenir";
+  text-align: center;
+  //margin: 0 auto;
+  width: 100%;
+  //height: 100%;
+  // padding-left: calc((100% - 960px) / 2);
+  // padding-top: 40px;
+  opacity: 0; /*Элемент полностью прозрачный (невидимый)*/
+  transition: 0.5s; /*Скорость перехода состояния элемента*/
+  animation: show 0.9s 1; /* Указываем название анимации, её время и количество повторов*/
+  animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+  animation-delay: 0.1s; /* Задержка перед началом */
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    width: 0%;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+.contacts {
+  position: absolute;
+  top: 7%;
+  left: 7%;
+  overflow: hidden;
+  width: 400px;
+  height: 515px; 
+
+  background-color: white;
+  z-index: 5;
+  opacity: 0.8;
+
+  border-radius: 10px;
+
+  //transform: skew(-8deg);
+
+  transition: 0.5s;
+  box-shadow: 7px 7px 5px rgb(0 0 0 / 50%);
+  &:hover {
+    opacity: 1;
+    box-shadow: 7px 7px 5px rgb(0 0 0 / 60%);
+    transition: 0.5s;
+    height: 515px; 
+  }
+  &:hover .divform {
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+  &:hover .arrow8 {
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  .contactsblock{
+
+    text-align: center;
+    padding: 5%;
+
+  .title {
+    font-family: 'Russo One', sans-serif;
+    font-size: 2rem;
+    //padding-top: 10px;
+    //text-transform: uppercase;
+    //color: #576367;
+    color: rgb(90, 115, 137);
+    //transform: skew(8deg);
+
+    .text {
+      padding: 5%;
+      font-weight: bold;
+    }
+    .phone {
+      font-size: large;
+      text-decoration: none;
+      color: #000;
+    }
+  }
+
+  .text {
+    font-family:'Marmelad', sans-serif;
+    padding: 5%;
+    //font-weight: bold;
+    font-style: italic;
+  }
+  .phone {
+    font-family: "Russo One", sans-serif;
+    font-size: large;
+    text-decoration:none;
+    color: #000;
+    //border: 2px dotted gray;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+    box-shadow: 3px 3px 2px rgba(0,0,0,0.3);
+    /* background-color: #294284;
+    color: white; */
+  }
+  .phone:hover {
+    background-color: #294184c2;
+    color: white;
+    transition: 0.5s;
+    box-shadow: 7px 7px 5px rgba(0,0,0,0.6); 
+  }
+
+  .phone:hover .icons {
+    fill: white;
+  }
+
+}
+}
+
+//ARROW =================================
+
+.arrow8 {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin: 20px auto 200px auto;
+  margin: auto 0 auto 43.5% ;
+  margin-top: 30px;
+  
+}
+.arrow8:before,
+.arrow8:after {
+  content: '';
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border-left: 2.5px solid rgb(90, 115, 137);
+  border-bottom: 2.5px solid rgb(90, 115, 137);
+  animation: arrow8 3s linear infinite;
+  box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.3); 
+}
+.arrow8:after {
+  animation: arrow8 3s linear infinite -1.5s;
+}
+@keyframes arrow8 {
+  0% {
+      opacity: 0;
+      transform: translate(0, -53px) rotate(-45deg);
+  }
+  10%, 90% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;  
+      transform: translate(0, 0) rotate(-45deg);
+  }
+  100% {
+      opacity: 0;
+      transform: translate(0, 53px) rotate(-45deg);
+  }
+}
+
+//========================
+
+.divform {
+  font-family: 'Avenir';
+  opacity: 0;
+  transition: 0.5s;
+
+  padding: 10%;
+}
+
+// FORM
+
+.input-at {
+  background-color: #000;
+}
+
+.icons {
+  display: inline;
+  margin: 10px 10px -2px 0;
+  width: 19px;
+  height: 19px;
+  transition: 0.5s;
+}
+
+.ballooncontent {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+}
